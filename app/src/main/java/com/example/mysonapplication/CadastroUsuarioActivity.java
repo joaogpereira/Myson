@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -19,10 +20,10 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_usuario);
 
-        Button btnVoltarCadastroUsuario = findViewById(R.id.btnVoltarCadastroUsuario);
+        ImageView imgVoltarCadastroUsuario = findViewById(R.id.imagemVoltarDoCadastro);
         TextView txtCadastroUsuario = findViewById(R.id.txtCadastroUsuario);
 
-        btnVoltarCadastroUsuario.setOnClickListener(new View.OnClickListener() {
+        imgVoltarCadastroUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
