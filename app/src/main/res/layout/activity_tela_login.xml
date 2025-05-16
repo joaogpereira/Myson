@@ -13,20 +13,23 @@
         android:id="@+id/button"
         android:layout_width="216dp"
         android:layout_height="45dp"
+        android:alpha="0.77"
+        android:backgroundTint="@color/black"
         android:fontFamily="@font/montserrat"
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903" />
+        app:layout_constraintVertical_bias="0.902" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:background="@android:color/transparent"
         android:fontFamily="@font/montserrat"
         android:hint="Seu E-mail"
         android:inputType="textEmailAddress"
@@ -42,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:background="@android:color/transparent"
         android:fontFamily="@font/montserrat"
         android:hint="Sua Senha"
         android:inputType="textPassword"
@@ -58,10 +62,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Esqueci minha senha"
+        android:textSize="18sp"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.952" />
@@ -70,15 +75,17 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:fontFamily="@font/montserrat"
-        android:textSize="40sp"
+        android:textColor="@color/black"
         android:text="Myson"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <TextView
         android:id="@+id/textView3"
@@ -98,14 +105,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
-        android:text="Cadastre-se"
+        android:text="Cadastre-se?"
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.283" />
 
     <TextView
         android:id="@+id/textView4"
@@ -113,12 +120,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Qual é o seu E-mail?"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.34" />
 
     <TextView
         android:id="@+id/textView5"
@@ -126,9 +134,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Qual a sua Senha?"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

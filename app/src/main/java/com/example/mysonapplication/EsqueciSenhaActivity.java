@@ -18,9 +18,9 @@ public class EsqueciSenhaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_esqueci_senha);
 
-        Button btnVoltar = findViewById(R.id.btnVoltarEsqueciSenha);
+        Button btnVoltarEsqueciSenha = findViewById(R.id.btnVoltarEsqueciSenha);
 
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
+        btnVoltarEsqueciSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
