@@ -17,6 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/safe_for_children" />
+        app:srcCompat="@drawable/icone_wizard" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

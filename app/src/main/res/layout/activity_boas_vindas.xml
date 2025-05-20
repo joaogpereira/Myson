@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Myson"
-        android:textColor="@color/black"
+        android:textColor="@color/Cor_letra"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
