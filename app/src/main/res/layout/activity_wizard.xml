@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".WizardActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="374dp"
+        android:layout_height="321dp"
+        android:background="@drawable/rounded_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -22,6 +36,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="246dp"
+        android:layout_height="45dp"
+        android:alpha="0.77"
+        android:backgroundTint="@color/Cor_botao"
+        android:fontFamily="@font/montserrat"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -88,8 +117,8 @@
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="@font/montserrat"
-        android:hint="Data"
-        android:inputType="text"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
@@ -144,30 +173,30 @@
 
     <ImageView
         android:id="@+id/img_menino"
-        android:layout_width="178dp"
-        android:layout_height="188dp"
+        android:layout_width="159dp"
+        android:layout_height="170dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.889"
+        app:layout_constraintVertical_bias="0.844"
         app:srcCompat="@drawable/boy" />
 
     <ImageView
         android:id="@+id/img_menina"
-        android:layout_width="178dp"
-        android:layout_height="188dp"
+        android:layout_width="159dp"
+        android:layout_height="170dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.889"
+        app:layout_constraintVertical_bias="0.844"
         app:srcCompat="@drawable/girl" />
 
     <TextView
@@ -184,4 +213,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.223" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

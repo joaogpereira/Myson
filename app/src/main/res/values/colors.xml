@@ -4,6 +4,9 @@
     <color name="Fundo">#FFFFFFFF</color>
     <color name="Links">#29435E</color>
     <color name="Cor_botao">#FF000000</color>
+    <color name="Cor_container">#F0F8FF</color>
+
+
 
 
 </resources>
