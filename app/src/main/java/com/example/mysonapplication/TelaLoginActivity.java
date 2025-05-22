@@ -34,11 +34,19 @@ public class TelaLoginActivity extends AppCompatActivity {
                 String nome = edtNome.getText().toString();
                 String senha = edtSenha.getText().toString();
 
-                if (nome.isEmpty() || senha.isEmpty()){
-                    Toast.makeText(TelaLoginActivity.this,"Por favor , Insira os Dados Corretamente", Toast.LENGTH_SHORT).show();
-                } else {
-                    validaLogin(nome,senha);
-                }
+                Intent intent = new Intent(
+                        TelaLoginActivity.this,
+                        WizardActivity.class
+                );
+
+                startActivity(intent);
+                // Comentando a lógica de autenticação apenas para ter como acessar a tela wizard
+                //if (nome.isEmpty() || senha.isEmpty()){
+                  //  Toast.makeText(TelaLoginActivity.this,"Por favor , Insira os Dados Corretamente", Toast.LENGTH_SHORT).show();
+               // } else {
+               //     validaLogin(nome,senha);
+               // }
+
             }
         });
 
