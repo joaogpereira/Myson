@@ -10,56 +10,56 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarMenina"
-        android:layout_width="146dp"
-        android:layout_height="134dp"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
         android:background="@drawable/rounded_toolbar"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792" />
+        app:layout_constraintVertical_bias="0.793" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarDataNascimento"
-        android:layout_width="312dp"
-        android:layout_height="68dp"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
         android:background="@drawable/rounded_toolbar"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintVertical_bias="0.40" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarNomeBebe"
-        android:layout_width="312dp"
-        android:layout_height="68dp"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
         android:background="@drawable/rounded_toolbar"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.274" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarMenino"
-        android:layout_width="133dp"
-        android:layout_height="135dp"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
         android:background="@drawable/rounded_toolbar"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.793" />
@@ -110,14 +110,14 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="45dp"
-        android:layout_height="47dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/edt_idade_bebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/calendario" />
 
     <TextView
@@ -158,16 +158,16 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:textStyle="bold"
         android:fontFamily="@font/montserrat"
         android:hint="Nome"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintVertical_bias="0.5" />
 
     <EditText
         android:id="@+id/edt_idade_bebe"
@@ -179,12 +179,12 @@
         android:hint="Data de Nascimento"
         android:inputType="date"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
         android:id="@+id/img_menino"
@@ -192,12 +192,12 @@
         android:layout_height="116dp"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.783"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarMenino"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarMenino"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarMenino"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarMenino"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/boy" />
 
     <ImageView
@@ -206,12 +206,12 @@
         android:layout_height="116dp"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.735"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.783"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarMenina"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarMenina"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarMenina"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarMenina"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/girl" />
 
 
