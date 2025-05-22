@@ -36,7 +36,7 @@ public class WizardActivity extends AppCompatActivity {
         });
 
         imgMenina.setOnClickListener(v -> {
-
+            toolbarMenina.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.rosa_claro));
 
         });
 
