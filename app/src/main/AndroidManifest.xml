@@ -13,13 +13,12 @@
         android:theme="@style/Theme.MysonApplication"
         tools:targetApi="31">
         <activity
+            android:name=".NightModeActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".WizardActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".CadastroUsuarioActivity"
@@ -29,8 +28,12 @@
             android:exported="false" />
         <activity
             android:name=".TelaLoginActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data
