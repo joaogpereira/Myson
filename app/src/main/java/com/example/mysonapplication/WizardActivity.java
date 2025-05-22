@@ -4,7 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,13 +31,11 @@ public class WizardActivity extends AppCompatActivity {
         Toolbar toolbarMenina = findViewById(R.id.materialToolbarMenina);
 
 
-
-        imgMenino.setOnClickListener(v ->{
+        imgMenino.setOnClickListener(v -> {
             toolbarMenino.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.azul_bebe));
         });
 
-        imgMenina.setOnClickListener(v ->{
-
+        imgMenina.setOnClickListener(v -> {
 
 
         });
