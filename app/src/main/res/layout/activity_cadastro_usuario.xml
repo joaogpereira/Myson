@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@color/Fundo"
     android:layout_height="match_parent"
     tools:context=".CadastroUsuarioActivity">
 
@@ -209,4 +210,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183"
         app:srcCompat="@drawable/left_arrow" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

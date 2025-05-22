@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="Cor_letra">#FF000000</color>
-    <color name="Fundo">#FFFFFFFF</color>
+    <color name="Fundo">#F1F1F1</color>
     <color name="Links">#29435E</color>
     <color name="Cor_botao">#FF000000</color>
     <color name="Cor_container">#F0F8FF</color>

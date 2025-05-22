@@ -19,9 +19,6 @@ public class TelaLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_login);
 
-
-
-
         //Definindo as views das intents
         TextView txtEsqueciSenha = findViewById(R.id.txtEsqueciSenha);
         TextView txtCadastre_se = findViewById(R.id.txtCadastre_se);
