@@ -33,7 +33,7 @@ public class WizardActivity extends AppCompatActivity {
 
 
         imgMenino.setOnClickListener(v ->{
-            
+            toolbarMenino.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.azul_bebe));
         });
 
         imgMenina.setOnClickListener(v ->{
