@@ -1,19 +1,14 @@
 package com.example.mysonapplication;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
 import androidx.appcompat.widget.Toolbar;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class WizardActivity extends AppCompatActivity {
+public class WizardActivity extends MudarTemaActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

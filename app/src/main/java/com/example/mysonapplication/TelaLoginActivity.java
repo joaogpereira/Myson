@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TelaLoginActivity extends AppCompatActivity {
+public class TelaLoginActivity extends MudarTemaActivity {
     private EditText edtNome, edtSenha;
     private Button btnLogin;
 
