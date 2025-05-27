@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class CadastroSonoActivity extends AppCompatActivity {
+public class CadastroSonoActivity extends MudarTemaActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

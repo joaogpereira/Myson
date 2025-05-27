@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class TelaPrincipalActivity extends AppCompatActivity {
+public class TelaPrincipalActivity extends MudarTemaActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
