@@ -6,6 +6,7 @@
     <color name="Links">#29435E</color>
     <color name="Cor_botao">#FFFFFFFF</color>
     <color name="Cor_container">#F0F8FF</color>
+    <color name="Cor_hint">#FF000000</color>
 
 
 
