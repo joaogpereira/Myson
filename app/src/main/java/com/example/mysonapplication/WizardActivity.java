@@ -1,6 +1,7 @@
 package com.example.mysonapplication;
 
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -31,18 +32,22 @@ public class WizardActivity extends MudarTemaActivity {
 
         imgMenino.setOnClickListener(v -> {
             if (selectedToolbar[0] != null) {
-                selectedToolbar[0].setBackgroundColor(Color.TRANSPARENT);
+                GradientDrawable bg = (GradientDrawable) selectedToolbar[0].getBackground();
+                bg.setColor(ContextCompat.getColor(this, R.color.Cor_container));
             }
-            toolbarMenino.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.azul_bebe));
+            GradientDrawable bgMenino = (GradientDrawable) toolbarMenino.getBackground();
+            bgMenino.setColor(ContextCompat.getColor(this, R.color.azul_bebe));;
             selectedToolbar[0] = toolbarMenino;
         });
 
         imgMenina.setOnClickListener(v -> {
             if (selectedToolbar[0] != null) {
-                selectedToolbar[0].setBackgroundColor(Color.TRANSPARENT);
+                GradientDrawable bg = (GradientDrawable) selectedToolbar[0].getBackground();
+                bg.setColor(ContextCompat.getColor(this, R.color.Cor_container));
             }
 
-            toolbarMenina.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.rosa_claro));
+            GradientDrawable bgMenina = (GradientDrawable) toolbarMenina.getBackground();
+            bgMenina.setColor(ContextCompat.getColor(this, R.color.rosa_claro));
             selectedToolbar[0] = toolbarMenina;
         });
 
