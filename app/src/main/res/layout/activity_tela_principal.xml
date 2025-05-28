@@ -5,6 +5,156 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Fundo"
     tools:context=".TelaPrincipalActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarIdadeBebe"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/verde_acizentado"
+        android:background="@drawable/rounded_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarCadastrarAlimentacao"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/Cor_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/logout" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Myson"
+        android:textColor="@color/Cor_letra"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/chupeta" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:background="#EEEEEE"
+        android:fontFamily="@font/montserrat"
+        android:padding="8dp"
+        android:text="20/05/2025"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:textColor="@color/Cor_letra"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Idade do bebê:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/txtIdadeBebe"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textColor="@color/Cor_letra"
+        android:layout_height="wrap_content"
+        android:text="2 semanas e 5 dias"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/txtCadastrarAlimentacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Cadastrar Alimentação"
+        android:textColor="@color/Cor_letra"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintVertical_bias="0.523" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
