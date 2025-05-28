@@ -26,24 +26,24 @@ public class WizardActivity extends MudarTemaActivity {
         Toolbar toolbarMenino = findViewById(R.id.materialToolbarMenino);
         Toolbar toolbarMenina = findViewById(R.id.materialToolbarMenina);
 
-        final ImageView[] selectedImage = {null};
+        final Toolbar[] selectedToolbar = {null};
 
 
         imgMenino.setOnClickListener(v -> {
-            if (selectedImage[0] != null) {
-                selectedImage[0].setBackgroundColor(Color.TRANSPARENT);
+            if (selectedToolbar[0] != null) {
+                selectedToolbar[0].setBackgroundColor(Color.TRANSPARENT);
             }
             toolbarMenino.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.azul_bebe));
-            selectedImage[0] = imgMenino;
+            selectedToolbar[0] = toolbarMenino;
         });
 
         imgMenina.setOnClickListener(v -> {
-            if (selectedImage[0] != null) {
-                selectedImage[0].setBackgroundColor(Color.TRANSPARENT);
+            if (selectedToolbar[0] != null) {
+                selectedToolbar[0].setBackgroundColor(Color.TRANSPARENT);
             }
 
             toolbarMenina.setBackgroundColor(ContextCompat.getColor(WizardActivity.this, R.color.rosa_claro));
-            selectedImage[0] = imgMenina;
+            selectedToolbar[0] = toolbarMenina;
         });
 
 
