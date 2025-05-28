@@ -122,6 +122,22 @@
         app:layout_constraintVertical_bias="0.048" />
 
     <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/bg_circle_gray"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_bebe"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="57dp"
         android:layout_height="53dp"
