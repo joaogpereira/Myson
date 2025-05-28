@@ -14,6 +14,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
+        
 
     }
 }

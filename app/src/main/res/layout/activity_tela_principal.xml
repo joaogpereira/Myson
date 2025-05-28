@@ -35,10 +35,91 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.419" />
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarCadastrarSono"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/Cor_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarRelatorioAlimentacao"
+        android:layout_width="164dp"
+        android:layout_height="169dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/Cor_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarRelatorioSono"
+        android:layout_width="164dp"
+        android:layout_height="169dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/Cor_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <View
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/bg_circle_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <View
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/bg_circle_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <View
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/bg_circle_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -68,6 +149,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Relatório\nAlimentação"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintVertical_bias="0.154" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="RelatórioSono"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioSono"
+        app:layout_constraintVertical_bias="0.126" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="58dp"
@@ -85,19 +199,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:textStyle="bold"
         android:background="#EEEEEE"
         android:fontFamily="@font/montserrat"
         android:padding="8dp"
         android:text="20/05/2025"
         android:textColor="#000000"
         android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.179" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -154,6 +268,21 @@
         app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarAlimentacao"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/txtCadastrarSono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Cadastrar Sono"
+        android:textColor="@color/Cor_letra"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarSono"
         app:layout_constraintVertical_bias="0.523" />
 
 
