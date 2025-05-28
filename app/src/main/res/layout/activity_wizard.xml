@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fundo"
+    tools:context=".WizardActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarMenina"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarDataNascimento"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarNomeBebe"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarMenino"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Myson"
+        android:textColor="@color/Cor_letra"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="246dp"
+        android:layout_height="45dp"
+        android:alpha="0.77"
+        android:backgroundTint="@color/Cor_botao"
+        android:fontFamily="@font/montserrat"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/chupeta" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/edt_idade_bebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:text="Identificação do Bebê"
+        android:textColor="@color/Cor_letra"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Sexo do Bebê?"
+        android:textColor="@color/Cor_letra"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <EditText
+        android:id="@+id/edt_nome_bebe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:textColorHint="@color/Cor_hint"
+        android:hint="Nome"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarNomeBebe"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/edt_idade_bebe"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:textColorHint="@color/Cor_hint"
+        android:hint="Data de Nascimento"
+        android:inputType="date"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarDataNascimento"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/img_menino"
+        android:layout_width="108dp"
+        android:layout_height="116dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarMenino"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarMenino"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarMenino"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarMenino"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/boy" />
+
+    <ImageView
+        android:id="@+id/img_menina"
+        android:layout_width="108dp"
+        android:layout_height="116dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarMenina"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarMenina"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarMenina"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarMenina"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/girl" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

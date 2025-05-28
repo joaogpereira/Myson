@@ -4,24 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@color/Fundo"
     android:layout_height="match_parent"
     tools:context=".CadastroUsuarioActivity">
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/montserrat"
-        android:hint="Seu E-mail"
-        android:background="@android:color/transparent"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -39,35 +24,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.398" />
 
-    <EditText
-        android:id="@+id/editTextNumberPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/montserrat"
-        android:hint="Sua Senha"
-        android:inputType="numberPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Myson"
         android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textColor="@color/Cor_letra"
+        android:text="Myson"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/textView7"
@@ -101,8 +72,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
         android:text="Entrar"
-        android:textColor="@color/blue"
+        android:textColor="@color/Links"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.692"
@@ -135,7 +107,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Seu E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
     <TextView
         android:id="@+id/textView12"
@@ -149,50 +138,66 @@
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintVertical_bias="0.633" />
 
     <EditText
         android:id="@+id/editTextNumberPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:background="@android:color/transparent"
+        android:ems="10"
         android:fontFamily="@font/montserrat"
         android:hint="Confirme Sua Senha"
         android:inputType="numberPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintVertical_bias="0.756" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Sua Senha"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="232dp"
         android:layout_height="47dp"
         android:alpha="0.77"
+        android:backgroundTint="@color/Cor_botao"
         android:fontFamily="@font/montserrat"
-        android:backgroundTint="@color/black"
         android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.926" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintHorizontal_bias="0.283"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045"
-        app:srcCompat="@drawable/image_2" />
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/chupeta" />
 
     <ImageView
         android:id="@+id/imagemVoltarDoCadastro"
@@ -205,4 +210,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183"
         app:srcCompat="@drawable/left_arrow" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
