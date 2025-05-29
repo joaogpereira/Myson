@@ -84,7 +84,7 @@ Tela inicial da parte do administrador
             <a href="">
                 <img style="border-radius: 50%;" src="" width="80px;" alt="Foto de Eduardo"/>
                 <br/>
-                <b>Eduardo</b>
+                <b>Eduardo Gondin</b>
             </a>
         </td>
         <td align="center">
