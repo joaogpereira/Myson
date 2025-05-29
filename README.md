@@ -81,8 +81,8 @@ Tela inicial da parte do administrador
 <table align="center">
     <tr>
         <td align="center">
-            <a href="https://github.com/PedroDiOliveira">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/126473107?v=4" width="80px;" alt="Foto de Eduardo"/>
+            <a href="">
+                <img style="border-radius: 50%;" src="" width="80px;" alt="Foto de Eduardo"/>
                 <br/>
                 <b>Eduardo</b>
             </a>
