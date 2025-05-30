@@ -27,7 +27,7 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarCadastrarAlimentacao"
-        android:layout_width="280dp"
+        android:layout_width="300dp"
         android:layout_height="45dp"
         android:background="@drawable/rounded_toolbar"
         android:backgroundTint="@color/Cor_container"
@@ -43,7 +43,7 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarCadastrarSono"
-        android:layout_width="280dp"
+        android:layout_width="300dp"
         android:layout_height="45dp"
         android:background="@drawable/rounded_toolbar"
         android:backgroundTint="@color/Cor_container"
@@ -65,7 +65,7 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
@@ -80,12 +80,13 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
 
     <View
+        android:id="@+id/viewAlimentacao"
         android:layout_width="75dp"
         android:layout_height="74dp"
         android:layout_gravity="center_vertical|start"
@@ -96,8 +97,24 @@
         app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
         app:layout_constraintVertical_bias="0.785" />
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/bg_circle_gray"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_bebe"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
 
     <View
+        android:id="@+id/viewSono"
         android:layout_width="75dp"
         android:layout_height="74dp"
         android:layout_gravity="center_vertical|start"
@@ -136,6 +153,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048" />
+
+
 
     <ImageView
         android:id="@+id/imageView4"
@@ -279,27 +298,102 @@
         android:text="Cadastrar Alimentação"
         android:textColor="#000000"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarAlimentacao"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarAlimentacao"
-        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarAlimentacao"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarAlimentacao"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/txtCadastrarSono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
         android:text="Cadastrar Sono"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarSono"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarSono"
-        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarSono"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarSono"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageViewAlimentacao"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/viewAlimentacao"
+        app:layout_constraintStart_toStartOf="@+id/viewAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/viewAlimentacao"
+        app:srcCompat="@drawable/mamadeira" />
+
+    <ImageView
+        android:id="@+id/imageViewSono"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/meia_lua"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSono"
+        app:layout_constraintEnd_toEndOf="@+id/viewSono"
+        app:layout_constraintStart_toStartOf="@+id/viewSono"
+        app:layout_constraintTop_toTopOf="@+id/viewSono" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:tint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/seta_direita" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:tint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/seta_direita" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarAlimentacao"
+        app:layout_constraintVertical_bias="0.5"
+        app:tint="@android:color/black"
+        app:srcCompat="@drawable/mamadeira" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:tint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarCadastrarSono"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/simbolo_de_sono_zzz" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
