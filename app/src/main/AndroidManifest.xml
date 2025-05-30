@@ -19,7 +19,7 @@
             android:name=".RelatorioAlimentacaoActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroALimentacaoActivity"
+            android:name=".CadastroAlimentacaoActivity"
             android:exported="false" />
         <activity
             android:name=".RelatorioSonoActivity"
@@ -29,17 +29,12 @@
             android:exported="false" />
         <activity
             android:name=".TelaPerfilActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".TelaPrincipalActivity"
-            android:exported="false" />
+            android:exported="false">
 
+        </activity>
         <activity
             android:name=".WizardActivity"
             android:exported="false" />
@@ -51,7 +46,12 @@
             android:exported="false" />
         <activity
             android:name=".TelaLoginActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data
