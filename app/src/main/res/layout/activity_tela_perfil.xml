@@ -76,6 +76,18 @@
         app:layout_constraintVertical_bias="0.455"
         app:srcCompat="@drawable/calendario" />
 
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="43dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintVertical_bias="0.765"
+        app:srcCompat="@drawable/gender" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -233,6 +245,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.129" />
 
+
+
     <View
         android:id="@+id/viewFotoBebe"
         android:layout_width="51dp"
@@ -245,6 +259,18 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/miniCamera"
+        android:layout_width="38dp"
+        android:layout_height="41dp"
+        android:src="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFotoBebe"
+        app:layout_constraintEnd_toEndOf="@+id/viewFotoBebe"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/viewFotoBebe"
+        app:layout_constraintTop_toTopOf="@+id/viewFotoBebe"
+        app:layout_constraintVertical_bias="0.5" />
 
     <RadioButton
         android:id="@+id/radio_feminino"
