@@ -96,7 +96,7 @@ Tela inicial da parte do administrador
             </a>
         </td>
         <td align="center">
-            <a href="https://github.com/gabriellima-4">
+            <a href="https://github.com/jpvoliveir">
                 <img style="border-radius: 50%;" src="#" width="80px;" alt="Foto de João Pedro"/>
                 <br/>
                 <b>João Pedro</b>
