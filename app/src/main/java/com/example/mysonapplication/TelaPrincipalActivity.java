@@ -4,13 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import android.widget.TextView;
 
 public class TelaPrincipalActivity extends MudarTemaActivity {
 
@@ -19,11 +13,19 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
 
-        ImageView imgViewAlimentacao = findViewById(R.id.imageViewAlimentacao);
-        ImageView imgViewSono = findViewById(R.id.imageViewSono);
+        // views para o relatorio
+        ImageView imgViewRelatorioAlimentacao = findViewById(R.id.imageViewAlimentacao);
+        ImageView imgViewRelatorioSono = findViewById(R.id.imageViewSono);
 
+        //views para o cadastro
+        TextView txtViewCadatroAlimentacao = findViewById(R.id.txtCadastrarAlimentacao);
+        TextView txtViewCadatroSono = findViewById(R.id.txtCadastrarSono);
 
-        imgViewAlimentacao.setOnClickListener(new View.OnClickListener() {
+        //Imageview para o logout
+        ImageView imgViewLogout = findViewById(R.id.imageViewLogout);
+
+        //direcionando para o relatorio de alimentação
+        imgViewRelatorioAlimentacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
@@ -33,8 +35,8 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                 startActivity(intent);
             }
         });
-
-        imgViewSono.setOnClickListener(new View.OnClickListener() {
+        //direcionando para o relatorio de sono
+        imgViewRelatorioSono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(
@@ -44,6 +46,41 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                 startActivity(intent);
             }
         });
+        //direciona para o cadastro da alimentação
+        txtViewCadatroAlimentacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        TelaPrincipalActivity.this,
+                        CadastroAlimentacaoActivity.class
+                );
+                startActivity(intent);
+            }
+        });
+        // direciona para o cadastro do sono
+        txtViewCadatroSono.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        TelaPrincipalActivity.this,
+                        CadastroSonoActivity.class
+                );
+                startActivity(intent);
+            }
+        });
+        // imagem view logout
+        imgViewLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        TelaPrincipalActivity.this,
+                        TelaLoginActivity.class
+                );
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

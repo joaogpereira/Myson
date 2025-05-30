@@ -19,7 +19,7 @@
             android:name=".RelatorioAlimentacaoActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroALimentacaoActivity"
+            android:name=".CadastroAlimentacaoActivity"
             android:exported="false" />
         <activity
             android:name=".RelatorioSonoActivity"
