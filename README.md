@@ -97,7 +97,7 @@ Tela inicial da parte do administrador
         </td>
         <td align="center">
             <a href="https://github.com/jpvoliveir">
-                <img style="border-radius: 50%;" src="#" width="80px;" alt="Foto de João Pedro"/>
+                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/127106496?v=4" width="80px;" alt="Foto de João Pedro"/>
                 <br/>
                 <b>João Pedro</b>
             </a>
