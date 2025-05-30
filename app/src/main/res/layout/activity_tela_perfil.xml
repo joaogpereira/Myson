@@ -77,6 +77,45 @@
         app:srcCompat="@drawable/calendario" />
 
     <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/mamadeira"
+        app:tint="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintVertical_bias="0.9"
+        app:srcCompat="@drawable/mamadeira"
+        app:tint="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/check2"
+        app:tint="@android:color/black" />
+
+    <ImageView
         android:id="@+id/imageView18"
         android:layout_width="43dp"
         android:layout_height="34dp"
@@ -211,10 +250,26 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe2"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe2"
-        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe2"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe2"
         app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:id="@+id/txtNomePerfil9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Refeições de hoje"
+        android:textColor="@color/Cor_letra_dentroContainer"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/textview17"
@@ -246,6 +301,21 @@
         app:layout_constraintVertical_bias="0.129" />
 
 
+    <ImageView
+        android:layout_width="149dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/bg_circle_gray"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_bebe"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/viewFotoBebe"
@@ -300,6 +370,20 @@
         app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe"
         app:layout_constraintVertical_bias="0.798" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintVertical_bias="0.402" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
