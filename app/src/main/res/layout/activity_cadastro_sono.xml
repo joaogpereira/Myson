@@ -9,7 +9,7 @@
     tools:context=".CadastroSonoActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbarIdadeBebe2"
+        android:id="@+id/materialToolbarTelaCasdastroSono"
         android:layout_width="280dp"
         android:layout_height="355dp"
         android:background="@drawable/rounded_toolbar"
@@ -88,11 +88,11 @@
         android:textColor="@color/Cor_letra"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe2"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
         app:layout_constraintVertical_bias="0.365" />
 
     <TextView
@@ -151,7 +151,8 @@
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintVertical_bias="0.456"
+        />
 
     <EditText
         android:id="@+id/editTextTime2"
@@ -181,15 +182,15 @@
         android:layout_height="39dp"
         android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="Ex:bebê agitado,acordou \n chorando"
         android:inputType="text"
         android:textColor="@color/Cor_letra"
-        android:hint="Ex:bebê agitado,acordou \n chorando"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
+        app:layout_constraintVertical_bias="0.709" />
 
     <ImageView
         android:id="@+id/imageView6"
