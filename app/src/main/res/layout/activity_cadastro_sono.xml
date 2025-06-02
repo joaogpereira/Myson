@@ -88,12 +88,12 @@
         android:textColor="@color/Cor_letra"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.369"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe2"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe2"
+        app:layout_constraintVertical_bias="0.365" />
 
     <TextView
         android:id="@+id/textView23"
@@ -106,10 +106,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintVertical_bias="0.393" />
 
     <TextView
         android:id="@+id/textView24"
@@ -182,13 +182,46 @@
         android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="text"
-        android:text="Ex:bebê agitado,acordou \n chorando"
+        android:textColor="@color/Cor_letra"
+        android:hint="Ex:bebê agitado,acordou \n chorando"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.721" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452"
+        app:srcCompat="@drawable/relogio" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582"
+        app:srcCompat="@drawable/relogio" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="94dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/lua"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="115dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
