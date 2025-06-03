@@ -7,8 +7,10 @@
     <color name="Cor_botao">#FFFFFFFF</color>
     <color name="Cor_container">#FFFFFFFF</color>
     <color name="Cor_hint">#FF000000</color>
+    <color name="Cor_letra_dentroContainer">#FF000000</color>
     <color name="Cor_cinza_container">#000000</color>
     <color name="verde_acizentado">#FFFFFFFF</color>
+
 
 
 
