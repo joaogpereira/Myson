@@ -21,22 +21,21 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
+        app:layout_constraintVertical_bias="0.691" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="234dp"
-        android:layout_height="46dp"
+        android:layout_height="47dp"
         android:alpha="0.77"
         android:backgroundTint="@color/Cor_botao"
         android:fontFamily="@font/montserrat"
         android:text="Salvar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintVertical_bias="0.951" />
 
     <ImageView
         android:id="@+id/imagemVoltarDoEsqueciSenha2"
@@ -56,7 +55,7 @@
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041"
@@ -74,7 +73,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041" />
@@ -90,10 +89,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
-        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
-        app:layout_constraintVertical_bias="0.365" />
+        app:layout_constraintVertical_bias="0.338" />
 
     <TextView
         android:id="@+id/textView23"
@@ -104,12 +103,12 @@
         android:textColor="@color/Cor_letra"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintVertical_bias="0.091" />
 
     <TextView
         android:id="@+id/textView24"
@@ -120,24 +119,28 @@
         android:textColor="@color/Cor_letra"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.309"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintVertical_bias="0.585" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
         android:fontFamily="@font/montserrat"
         android:text="Cadastro de \n sono do bebê"
         android:textColor="@color/Cor_letra"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="128dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
 
     <EditText
         android:id="@+id/editTextTime"
@@ -146,13 +149,14 @@
         android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456"
-        />
+        android:text="          20:00"
+        android:textColor="@color/Cor_letra"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintVertical_bias="0.211" />
 
     <EditText
         android:id="@+id/editTextTime2"
@@ -161,12 +165,13 @@
         android:background="@android:color/transparent"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577" />
+        android:text="          6:30"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:id="@+id/textView25"
@@ -179,41 +184,41 @@
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="225dp"
-        android:layout_height="39dp"
+        android:layout_height="41dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Ex:bebê agitado,acordou \n chorando"
         android:inputType="text"
         android:textColor="@color/Cor_letra"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono"
+        app:layout_constraintVertical_bias="0.735" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="45dp"
         android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTime"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTime"
+        app:layout_constraintTop_toTopOf="@+id/editTextTime"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/relogio" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="45dp"
         android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTime2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTime2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTime2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTime2"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/relogio" />
 
     <ImageView
@@ -221,7 +226,7 @@
         android:layout_width="94dp"
         android:layout_height="89dp"
         app:srcCompat="@drawable/lua"
-        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="115dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
