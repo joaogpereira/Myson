@@ -95,7 +95,7 @@
         app:tint="@android:color/black" />
 
     <ImageView
-        android:id="@+id/imagemVoltarDoCadastro"
+        android:id="@+id/imagemVoltarDoPerfil"
         android:layout_width="71dp"
         android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="parent"
