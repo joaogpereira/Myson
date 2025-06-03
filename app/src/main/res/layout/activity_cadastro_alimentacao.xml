@@ -10,18 +10,47 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarInformacoesBebe3"
-        android:layout_width="341dp"
-        android:layout_height="187dp"
+        android:layout_width="301dp"
+        android:layout_height="526dp"
         android:background="@drawable/rounded_toolbar"
         android:backgroundTint="@color/Cor_container"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376" />
+        app:layout_constraintVertical_bias="0.786" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarInformacoesBebe4"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/Cor_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:alpha="0.77"
+        android:backgroundTint="@color/Cor_botao"
+        android:fontFamily="@font/montserrat"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe3"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe3"
+        app:layout_constraintVertical_bias="0.904" />
 
     <TextView
         android:id="@+id/textView13"
