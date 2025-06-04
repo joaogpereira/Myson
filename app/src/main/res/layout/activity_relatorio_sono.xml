@@ -68,6 +68,61 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.745" />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.745" />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.745" />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.745" />
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.745" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarTelaCasdastroSono3"
@@ -411,4 +466,6 @@
         app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
         app:layout_constraintVertical_bias="0.042" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
