@@ -9,6 +9,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.TimeZone;
 
 public class TelaPrincipalActivity extends MudarTemaActivity {
 
@@ -32,6 +33,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
         //Data de hoje
         TextView txtDataAtual = findViewById(R.id.txtData);
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt", "BR"));
+        dateFormat.setTimeZone(TimeZone.getTimeZone("America/Sao_Paulo"));
         String dataAtual = dateFormat.format(new Date());
         txtDataAtual.setText(dataAtual);
 
