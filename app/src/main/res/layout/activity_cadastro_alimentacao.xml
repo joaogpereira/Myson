@@ -9,6 +9,18 @@
     tools:context=".CadastroAlimentacaoActivity">
 
 
+    <ImageView
+        android:id="@+id/imagemVoltarDoCadastroAlimentacao"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/left_arrow" />
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarInformacoesBebe3"
         android:layout_width="301dp"
@@ -24,13 +36,13 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/textView22"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:fontFamily="@font/montserrat"
         android:text="Data"
         android:textSize="30dp"
-
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
@@ -40,29 +52,29 @@
         app:layout_constraintVertical_bias="0.119" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView23"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:fontFamily="@font/montserrat"
         android:text="Hora"
+        android:textColor="@android:color/black"
         android:textSize="30dp"
-
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe3"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.281" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView25"
         android:layout_width="230dp"
         android:layout_height="29dp"
         android:fontFamily="@font/montserrat"
         android:text="Volume"
         android:textSize="28dp"
-
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
@@ -72,13 +84,13 @@
         app:layout_constraintVertical_bias="0.619" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView24"
         android:layout_width="261dp"
         android:layout_height="40dp"
         android:fontFamily="@font/montserrat"
         android:text="Tipo de alimentação"
         android:textSize="24dp"
-
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
@@ -88,10 +100,13 @@
         app:layout_constraintVertical_bias="0.45" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/editText9"
         android:layout_width="250dp"
         android:layout_height="37dp"
         android:background="@drawable/border"
+        android:fontFamily="@font/montserrat"
+        android:hint="       DD/MM/YY"
+        android:textColorHint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -129,13 +144,14 @@
         app:layout_constraintVertical_bias="0.398" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/editTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:hint="Leite"
+        android:textColorHint="@android:color/black"
         android:inputType="text"
         android:textColor="@color/Cor_letra"
         app:layout_constraintBottom_toBottomOf="@+id/editText5"
@@ -163,21 +179,25 @@
         android:layout_width="250dp"
         android:layout_height="37dp"
         android:background="@drawable/border"
+        android:hint="       00:00"
+        android:textColorHint="@android:color/black"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe3"
-        app:layout_constraintVertical_bias="0.359" />
+        app:layout_constraintVertical_bias="0.361" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="234dp"
         android:layout_height="46dp"
         android:alpha="0.77"
-        android:backgroundTint="@color/Cor_botao"
+        android:backgroundTint="@android:color/black"
         android:fontFamily="@font/montserrat"
         android:text="Salvar"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe3"
         app:layout_constraintHorizontal_bias="0.492"
@@ -221,6 +241,7 @@
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:hint="Ex:150ml"
+        android:textColorHint="@android:color/black"
         android:inputType="text"
         android:textColor="@color/Cor_letra"
         app:layout_constraintBottom_toBottomOf="@+id/editText7"
@@ -229,29 +250,32 @@
         app:layout_constraintStart_toStartOf="@+id/editText7"
         app:layout_constraintTop_toTopOf="@+id/editText7"
         app:layout_constraintVertical_bias="0.398" />
+
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
         android:text="Cadastro de\nalimentação do\nbebê"
+        android:textColor="@color/Cor_letra"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.197" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="43dp"
         android:layout_height="34dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText8"
-        app:layout_constraintEnd_toEndOf="@+id/editText8"
+        app:layout_constraintBottom_toBottomOf="@+id/editText9"
+        app:layout_constraintEnd_toEndOf="@+id/editText9"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText8"
-        app:layout_constraintTop_toTopOf="@+id/editText8"
+        app:layout_constraintStart_toStartOf="@+id/editText9"
+        app:layout_constraintTop_toTopOf="@+id/editText9"
         app:layout_constraintVertical_bias="0.455"
         app:srcCompat="@drawable/calendario" />
 
