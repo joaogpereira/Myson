@@ -5,6 +5,410 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Fundo"
     tools:context=".RelatorioSonoActivity">
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:alpha="0.77"
+        android:backgroundTint="@color/Cor_botao"
+        android:fontFamily="@font/montserrat"
+        android:text="Retornar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Hora média\n de dormir \n    21:45"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Duração média\n   9H 15min"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono2"
+        android:layout_width="410dp"
+        android:layout_height="355dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/Cor_container"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono3"
+        android:layout_width="22dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.715" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono9"
+        android:layout_width="20dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono6"
+        android:layout_width="22dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono7"
+        android:layout_width="22dp"
+        android:layout_height="130dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono8"
+        android:layout_width="20dp"
+        android:layout_height="149dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono4"
+        android:layout_width="19dp"
+        android:layout_height="148dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbarTelaCasdastroSono5"
+        android:layout_width="18dp"
+        android:layout_height="191dp"
+        android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/azul_bebe"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Relatório \n de sono "
+        android:textColor="@color/Cor_letra"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Myson"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+
+        app:srcCompat="@drawable/chupeta" />
+
+    <ImageView
+        android:id="@+id/imagemVoltarDoEsqueciSenha3"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="83dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139"
+        app:srcCompat="@drawable/relogio" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:00"
+        android:textColor="@color/Cor_letra"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:30"
+        android:textColor="@color/Cor_letra"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:03"
+        android:textColor="@color/Cor_letra"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:23"
+        android:textColor="@color/Cor_letra"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6:43"
+        android:textColor="@color/Cor_letra"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T"
+        android:textColor="@color/Cor_letra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarTelaCasdastroSono2"
+        app:layout_constraintVertical_bias="0.042" />
 </androidx.constraintlayout.widget.ConstraintLayout>
