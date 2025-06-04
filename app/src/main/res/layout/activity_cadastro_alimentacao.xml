@@ -10,6 +10,18 @@
 
 
     <ImageView
+        android:id="@+id/imagemVoltarDoEsqueciSenha2"
+        android:layout_width="95dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/mamadeira_diferente" />
+
+    <ImageView
         android:id="@+id/imagemVoltarDoCadastroAlimentacao"
         android:layout_width="71dp"
         android:layout_height="29dp"
@@ -262,10 +274,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        app:layout_constraintVertical_bias="0.194" />
 
     <ImageView
         android:id="@+id/imageView12"
