@@ -1,6 +1,7 @@
 package com.example.mysonapplication;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,11 +14,18 @@ import androidx.appcompat.app.AppCompatActivity;
 public class TelaLoginActivity extends MudarTemaActivity {
     private EditText edtNome, edtSenha;
     private Button btnLogin;
+    private SQLiteDatabase db;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_login);
+
+        ConexaoDB dbHelper = new ConexaoDB(TelaLoginActivity.this);
+        db = dbHelper.getReadableDatabase();
+
 
         //Definindo as views das intents
         TextView txtEsqueciSenha = findViewById(R.id.txtEsqueciSenha);
@@ -34,20 +42,20 @@ public class TelaLoginActivity extends MudarTemaActivity {
                 String nome = edtNome.getText().toString();
                 String senha = edtSenha.getText().toString();
 
-                Intent intent = new Intent(
-                        TelaLoginActivity.this,
-                        WizardActivity.class
-                );
-                startActivity(intent);
-
-                // Comentando a lógica de autenticação apenas para ter como acessar a tela wizard
-                //if (nome.isEmpty() || senha.isEmpty()){
-                //  Toast.makeText(TelaLoginActivity.this,"Por favor , Insira os Dados Corretamente", Toast.LENGTH_SHORT).show();
-               // } else {
-               //     validaLogin(nome,senha);
-               // }
-
+                if (nome.isEmpty() || senha.isEmpty()) {
+                    Toast.makeText(TelaLoginActivity.this, "Por favor, insira os dados corretamente", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (validaLogin(nome, senha)) {
+                        Toast.makeText(TelaLoginActivity.this, "Login bem-sucedido", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(TelaLoginActivity.this, WizardActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(TelaLoginActivity.this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
+
+
         });
 
 
@@ -76,16 +84,21 @@ public class TelaLoginActivity extends MudarTemaActivity {
         });
 
     }
-    private void validaLogin(String nome,String senha){
-        //Dados ficticios apenas para testes
-        // Falta implementar autenticação com o banco de dados e a conexão com o mesmo
-        String usuariocorreto ="jeipas";
-        String senhacorreta ="123";
+    private boolean validaLogin(String nome,String senha){
 
-        if (nome.equals(usuariocorreto) && senha.equals(senhacorreta)) {
-            Toast.makeText(TelaLoginActivity.this,"Login Bem sucedido",Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(TelaLoginActivity.this,"Dados Incorretos",Toast.LENGTH_SHORT).show();
+        String sql = "SELECT * FROM usuario WHERE email = ? AND senha = ?";
+        String[] selectionArgs = { nome, senha };
+        try (android.database.Cursor cursor = db.rawQuery(sql, selectionArgs)) {
+            if (cursor.moveToFirst()) {
+                // Encontrou um registro que bate com usuário e senha
+                return true;
+            } else {
+                // Não encontrou
+                return false;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
 
 
