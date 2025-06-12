@@ -9,7 +9,7 @@
     tools:context=".CadastroUsuarioActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edtNomeCadastroUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.251" />
 
     <TextView
-        android:id="@+id/txtCadastroUsuario"
+        android:id="@+id/txtEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.487" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/edtEmailCadastroUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -145,7 +145,7 @@
         app:layout_constraintVertical_bias="0.633" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword2"
+        android:id="@+id/edtSenhaConfirmacaoCadastroUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -162,7 +162,7 @@
         app:layout_constraintVertical_bias="0.756" />
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
+        android:id="@+id/edtSenhaCadastroUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -179,7 +179,7 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnProximoCadastroUsuario"
         android:layout_width="232dp"
         android:layout_height="47dp"
         android:alpha="0.77"
