@@ -32,9 +32,8 @@
             android:exported="false" />
         <activity
             android:name=".TelaPrincipalActivity"
-            android:exported="false">
+            android:exported="false"/>
 
-        </activity>
         <activity
             android:name=".WizardActivity"
             android:exported="false" />

@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
+
 public class TelaPrincipalActivity extends MudarTemaActivity {
 
     @Override
@@ -23,6 +28,14 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
 
         //Imageview para o logout
         ImageView imgViewLogout = findViewById(R.id.imageViewLogout);
+        ImageView imgIrPerfil = findViewById(R.id.imagemIrPerfil);
+
+        //Data de hoje
+        TextView txtDataAtual = findViewById(R.id.txtData);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt", "BR"));
+        dateFormat.setTimeZone(TimeZone.getTimeZone("America/Sao_Paulo"));
+        String dataAtual = dateFormat.format(new Date());
+        txtDataAtual.setText(dataAtual);
 
         //direcionando para o relatorio de alimentação
         imgViewRelatorioAlimentacao.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +81,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                 startActivity(intent);
             }
         });
-        // imagem view logout
+        // Intent de logout
         imgViewLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +92,18 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                 startActivity(intent);
             }
         });
+        // Direcionada para o Perfil
+        imgIrPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        TelaPrincipalActivity.this,
+                        TelaPerfilActivity.class
+                );
+                startActivity(intent);
+            }
+        });
+
 
 
 
