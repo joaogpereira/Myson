@@ -15,7 +15,7 @@ public class SplashActivity extends MudarTemaActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // Aguarda 2 segundos e redireciona
+        // Aguarda 3 segundos e redireciona
         new Handler().postDelayed(() -> {
             if (temBebeCadastrado()) {
                 // Se já tem bebê, vai para tela principal
@@ -25,7 +25,7 @@ public class SplashActivity extends MudarTemaActivity {
                 startActivity(new Intent(this, WizardActivity.class));
             }
             finish(); // Finaliza a SplashActivity
-        }, 2000);
+        }, 3000);
     }
 
     // Verifica se há algum bebê cadastrado no banco
