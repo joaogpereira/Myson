@@ -47,7 +47,7 @@ public class TelaLoginActivity extends MudarTemaActivity {
                 } else {
                     if (validaLogin(nome, senha)) {
                         Toast.makeText(TelaLoginActivity.this, "Login bem-sucedido", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(TelaLoginActivity.this, WizardActivity.class);
+                        Intent intent = new Intent(TelaLoginActivity.this, SplashActivity.class);
                         startActivity(intent);
                     } else {
                         Toast.makeText(TelaLoginActivity.this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
