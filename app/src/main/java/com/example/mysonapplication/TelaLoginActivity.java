@@ -45,10 +45,13 @@ public class TelaLoginActivity extends MudarTemaActivity {
                 if (nome.isEmpty() || senha.isEmpty()) {
                     Toast.makeText(TelaLoginActivity.this, "Por favor, insira os dados corretamente", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (validaLogin(nome, senha)) {
+                    int usuarioId = validaLogin(nome,senha);
+                    if (usuarioId != -1) {
                         Toast.makeText(TelaLoginActivity.this, "Login bem-sucedido", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(TelaLoginActivity.this, SplashActivity.class);
+                        intent.putExtra("usuario_id",usuarioId);
                         startActivity(intent);
+                        finish();
                     } else {
                         Toast.makeText(TelaLoginActivity.this, "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
                     }
@@ -84,21 +87,20 @@ public class TelaLoginActivity extends MudarTemaActivity {
         });
 
     }
-    private boolean validaLogin(String nome,String senha){
+    private int validaLogin(String nome,String senha){
 
-        String sql = "SELECT * FROM usuario WHERE email = ? AND senha = ?";
+        String sql = "SELECT id FROM usuario WHERE email = ? AND senha = ?";
         String[] selectionArgs = { nome, senha };
         try (android.database.Cursor cursor = db.rawQuery(sql, selectionArgs)) {
             if (cursor.moveToFirst()) {
-                // Encontrou um registro que bate com usuário e senha
-                return true;
+                return cursor.getInt(cursor.getColumnIndexOrThrow("id"));
             } else {
                 // Não encontrou
-                return false;
+                return -1;
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
+            return -1;
         }
 
 
