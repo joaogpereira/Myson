@@ -40,7 +40,7 @@ public class SplashActivity extends MudarTemaActivity {
         ConexaoDB dbHelper = new ConexaoDB(this);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
-        Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM bebe", null);
+        Cursor cursor = db.rawQuery("SELECT COUNT(*) FROM bebe WHERE usuario_id = ?", new String[] { String.valueOf(usuarioId) });
         boolean existe = false;
 
         if (cursor != null) {
