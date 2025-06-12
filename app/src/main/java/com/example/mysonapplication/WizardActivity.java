@@ -17,10 +17,11 @@ public class WizardActivity extends MudarTemaActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wizard);
 
-
+        //identificadores de nome e idade
         EditText edtNomeBebe = findViewById(R.id.edt_nome_bebe);
         EditText edtIdadeBebe = findViewById(R.id.edt_idade_bebe);
 
+        //identificador do sexo
         ImageView imgMenino = findViewById(R.id.img_menino);
         ImageView imgMenina = findViewById(R.id.img_menina);
 
