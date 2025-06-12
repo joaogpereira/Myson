@@ -25,15 +25,13 @@ public class CadastroUsuarioActivity extends MudarTemaActivity {
         edtNome = findViewById(R.id.edtNomeCadastroUsuario);
         edtEmail = findViewById(R.id.edtEmailCadastroUsuario);
         edtSenha =findViewById(R.id.edtSenhaCadastroUsuario);
-        edtSenha =findViewById(R.id.edtSenhaConfirmacaoCadastroUsuario);
+        edtConfirmarSenha =findViewById(R.id.edtSenhaConfirmacaoCadastroUsuario);
         Button btnProximo = findViewById(R.id.btnProximoCadastroUsuario);
         ImageView imgVoltarCadastroUsuario = findViewById(R.id.imagemVoltarDoCadastro);
         TextView txtCadastroUsuario = findViewById(R.id.txtEntrar);
 
 
-        //Conectando no Banco de dados
-        ConexaoDB dbHelper = new ConexaoDB(this);
-        db = dbHelper.getWritableDatabase();
+
 
         //voltar para a tela de login
         imgVoltarCadastroUsuario.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +72,10 @@ public class CadastroUsuarioActivity extends MudarTemaActivity {
                 Toast.makeText(this, "As Senhas não Coincidem", Toast.LENGTH_SHORT).show();
                 return;
             }
+
+            //Conectando no Banco de dados
+            ConexaoDB dbHelper = new ConexaoDB(this);
+            db = dbHelper.getWritableDatabase();
 
             ContentValues valores = new ContentValues();
             valores.put("nome",nome);
