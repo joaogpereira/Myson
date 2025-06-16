@@ -293,14 +293,15 @@
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="@+id/editText6"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="@+id/editText6"
         app:layout_constraintTop_toTopOf="@+id/editText6"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/check2"
-        app:tint="@android:color/black" />
+        app:layout_constraintVertical_bias="0.5
+"
+        app:srcCompat="@drawable/clock" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
