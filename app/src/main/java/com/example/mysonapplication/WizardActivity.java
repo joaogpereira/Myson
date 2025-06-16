@@ -101,11 +101,9 @@ public class WizardActivity extends MudarTemaActivity {
             db.close();
 
             if (resultado != -1) {
-                String idadeFormatada = calcularIdade(dataNascimentoDb);
                 Toast.makeText(this, "Bebê cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, TelaPrincipalActivity.class);
                 intent.putExtra("usuario_id", usuarioId);
-                intent.putExtra("idade_bebe", idadeFormatada);
                 startActivity(intent);
                 finish();
             } else {
@@ -114,36 +112,5 @@ public class WizardActivity extends MudarTemaActivity {
 
         });
     }
-    private String calcularIdade(String dataNascimentoDb) {
-        SimpleDateFormat dbFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
-        try {
-            Date nascimento = dbFormat.parse(dataNascimentoDb);
-            Date hoje = new Date();
 
-            long diferencaMillis = hoje.getTime() - nascimento.getTime();
-            long diasTotais = diferencaMillis / (1000 * 60 * 60 * 24);
-
-            int anos = (int) (diasTotais / 365);
-            int meses = (int) ((diasTotais % 365) / 30);
-            int semanas = (int) (((diasTotais % 365) % 30) / 7);
-            int dias = (int) (((diasTotais % 365) % 30) % 7);
-
-            StringBuilder idadeStr = new StringBuilder();
-
-            if (anos > 0) idadeStr.append(anos).append(anos == 1 ? " ano, " : " anos, ");
-            if (meses > 0) idadeStr.append(meses).append(meses == 1 ? " mês, " : " meses, ");
-            if (semanas > 0) idadeStr.append(semanas).append(semanas == 1 ? " semana, " : " semanas, ");
-            if (dias > 0 || idadeStr.length() == 0) idadeStr.append(dias).append(dias == 1 ? " dia" : " dias");
-
-            String resultado = idadeStr.toString().trim();
-            if (resultado.endsWith(",")) {
-                resultado = resultado.substring(0, resultado.length() - 1);
-            }
-            return resultado;
-
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return "Data inválida";
-        }
-    }
 }
