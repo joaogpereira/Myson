@@ -228,10 +228,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -239,10 +239,10 @@
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048"
+        app:layout_constraintVertical_bias="0.05"
         app:srcCompat="@drawable/chupeta" />
 
     <EditText
@@ -295,13 +295,15 @@
         android:id="@+id/imageView13"
         android:layout_width="38dp"
         android:layout_height="30dp"
+        android:backgroundTint="@android:color/black"
+        app:tint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="@+id/editText6"
         app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="@+id/editText6"
         app:layout_constraintTop_toTopOf="@+id/editText6"
-        app:layout_constraintVertical_bias="0.5
-"
+        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/clock" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
