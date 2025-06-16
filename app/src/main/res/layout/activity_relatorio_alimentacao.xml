@@ -8,6 +8,34 @@
     android:background="@color/Fundo"
     tools:context=".RelatorioAlimentacaoActivity">
 
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/chupeta" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Myson"
+        android:textColor="@color/Cor_letra"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarRelatorioAlimentacao"
         android:layout_width="301dp"
@@ -69,17 +97,18 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="172dp"
-        android:layout_height="108dp"
-        android:text="Relatório da \nalimentação "
+        android:layout_width="203dp"
+        android:layout_height="89dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Relatório da alimentação "
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/textView18"
@@ -174,7 +203,20 @@
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
         app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
         app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.297" />
+        app:layout_constraintVertical_bias="0.27" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="text"
+        android:text="10:30"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
+        app:layout_constraintVertical_bias="0.363" />
 
     <TextView
         android:id="@+id/textView19"
@@ -200,7 +242,7 @@
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fórmula"
+        android:text="Leite"
         app:layout_constraintBottom_toBottomOf="@+id/editTextText8"
         app:layout_constraintEnd_toEndOf="@+id/editTextText8"
         app:layout_constraintStart_toStartOf="@+id/editTextText8"
@@ -210,7 +252,7 @@
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fórmula"
+        android:text="Purê"
         app:layout_constraintBottom_toBottomOf="@+id/editTextText9"
         app:layout_constraintEnd_toEndOf="@+id/editTextText9"
         app:layout_constraintStart_toStartOf="@+id/editTextText9"
@@ -225,6 +267,17 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextText5"
         app:layout_constraintStart_toStartOf="@+id/editTextText5"
         app:layout_constraintTop_toTopOf="@+id/editTextText5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purê"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText6"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText6"
+        app:layout_constraintStart_toStartOf="@+id/editTextText6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
@@ -253,7 +306,7 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="150mL"
+        android:text="90mL"
         app:layout_constraintBottom_toBottomOf="@+id/editTextText8"
         app:layout_constraintEnd_toEndOf="@+id/editTextText8"
         app:layout_constraintHorizontal_bias="1.0"
@@ -282,18 +335,16 @@
         app:layout_constraintStart_toStartOf="@+id/editTextText5"
         app:layout_constraintTop_toTopOf="@+id/editTextText5" />
 
-    <TextView
-        android:id="@+id/editTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:text="10:30"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintHorizontal_bias="0.24"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.39" />
+    <ImageView
+        android:id="@+id/Clock"
+        android:layout_width="76dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@drawable/clock" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
