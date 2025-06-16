@@ -12,30 +12,37 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 public class TelaPrincipalActivity extends MudarTemaActivity {
+    private int usuarioId;
+    private String idadeBebe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
 
+        usuarioId = getIntent().getIntExtra("usuario_id", -1);
+        idadeBebe = getIntent().getStringExtra("idade_bebe");
+
+
         // views para o relatorio
         ImageView imgViewRelatorioAlimentacao = findViewById(R.id.imageViewAlimentacao);
         ImageView imgViewRelatorioSono = findViewById(R.id.imageViewSono);
-
         //views para o cadastro
         TextView txtViewCadatroAlimentacao = findViewById(R.id.txtCadastrarAlimentacao);
         TextView txtViewCadatroSono = findViewById(R.id.txtCadastrarSono);
-
         //Imageview para o logout
         ImageView imgViewLogout = findViewById(R.id.imageViewLogout);
         ImageView imgIrPerfil = findViewById(R.id.imagemIrPerfil);
-
         //Data de hoje
         TextView txtDataAtual = findViewById(R.id.txtData);
+        TextView txtIdadeBebe = findViewById(R.id.txtIdadeBebe);
+
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt", "BR"));
         dateFormat.setTimeZone(TimeZone.getTimeZone("America/Sao_Paulo"));
         String dataAtual = dateFormat.format(new Date());
         txtDataAtual.setText(dataAtual);
+
 
         //direcionando para o relatorio de alimentação
         imgViewRelatorioAlimentacao.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +110,13 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                 startActivity(intent);
             }
         });
+
+        if (idadeBebe != null && !idadeBebe.isEmpty()) {
+            txtIdadeBebe.setText("Idade do bebê: " + idadeBebe);
+        } else {
+            txtIdadeBebe.setText("Idade do bebê não informada");
+        }
+
 
 
 
