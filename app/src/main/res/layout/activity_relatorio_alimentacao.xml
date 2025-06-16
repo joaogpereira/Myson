@@ -366,4 +366,16 @@
         app:layout_constraintVertical_bias="0.177"
         app:srcCompat="@drawable/clock" />
 
+    <ImageView
+        android:id="@+id/imagemVoltarDoRelatorioAlimentacao"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/left_arrow" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

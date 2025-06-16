@@ -16,6 +16,7 @@ import androidx.core.content.ContextCompat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class WizardActivity extends MudarTemaActivity {
 
@@ -108,6 +109,8 @@ public class WizardActivity extends MudarTemaActivity {
             } else {
                 Toast.makeText(this, "Erro ao cadastrar bebê", Toast.LENGTH_SHORT).show();
             }
+
         });
     }
+
 }

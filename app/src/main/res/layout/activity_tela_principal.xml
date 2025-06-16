@@ -11,10 +11,10 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbarIdadeBebe"
-        android:layout_width="280dp"
-        android:layout_height="45dp"
-        android:backgroundTint="@color/verde_acizentado"
+        android:layout_width="367dp"
+        android:layout_height="52dp"
         android:background="@drawable/rounded_toolbar"
+        android:backgroundTint="@color/verde_acizentado"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
