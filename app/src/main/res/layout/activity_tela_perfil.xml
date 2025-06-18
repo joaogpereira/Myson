@@ -179,6 +179,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
+        android:paddingLeft="40dp"
         android:text="Eduardo"
         android:textColor="@color/Cor_letra_dentroContainer"
         android:textSize="22dp"

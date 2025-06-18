@@ -17,6 +17,7 @@ public class RelatorioSonoActivity extends MudarTemaActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_relatorio_sono);
+        usuarioId = getIntent().getIntExtra("usuario_id", -1);
 
         ImageView imgVoltarRelatorioSono = findViewById(R.id.imgVoltarRelatorioSono);
 
