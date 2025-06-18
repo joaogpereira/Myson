@@ -8,8 +8,6 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -70,7 +68,7 @@ public class TelaPerfilActivity extends MudarTemaActivity {
         ConexaoDB dbHelper = new ConexaoDB(this);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
-        // Consulta nome do usuário
+        // Consulta o nome do usuário
         Cursor cursorUsuario = db.rawQuery(
                 "SELECT nome FROM usuario WHERE id = ?",
                 new String[]{String.valueOf(usuarioId)}
@@ -84,21 +82,24 @@ public class TelaPerfilActivity extends MudarTemaActivity {
         }
         cursorUsuario.close();
 
-        // Consulta dados do bebê do usuário
+        // Consulta dados do bebê
         Cursor cursorBebe = db.rawQuery(
                 "SELECT data_nascimento, sexo FROM bebe WHERE usuario_id = ? ORDER BY id DESC LIMIT 1",
                 new String[]{String.valueOf(usuarioId)}
         );
 
-        // Desabilita ambos os radios para impedir seleção
-        radioMasculino.setEnabled(false);
-        radioFeminino.setEnabled(false);
+        // Permite que o RadioButton fique com aparência normal, mas bloqueia clique
+        radioMasculino.setEnabled(true);
+        radioFeminino.setEnabled(true);
+
+        radioMasculino.setClickable(false);
+        radioFeminino.setClickable(false);
 
         if (cursorBebe.moveToFirst()) {
             String dataNascimento = cursorBebe.getString(cursorBebe.getColumnIndexOrThrow("data_nascimento"));
             String sexo = cursorBebe.getString(cursorBebe.getColumnIndexOrThrow("sexo"));
 
-            // Converter data de "yyyy-MM-dd" para "dd/MM/yyyy"
+            // Formatar a data: de "yyyy-MM-dd" para "dd/MM/yyyy"
             try {
                 SimpleDateFormat formatoBanco = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
                 Date data = formatoBanco.parse(dataNascimento);
@@ -112,6 +113,7 @@ public class TelaPerfilActivity extends MudarTemaActivity {
                 txtDataNascimentoBebe.setText("Data inválida");
             }
 
+            // Marca o sexo
             if ("Masculino".equalsIgnoreCase(sexo)) {
                 radioMasculino.setChecked(true);
                 radioFeminino.setChecked(false);
@@ -128,6 +130,7 @@ public class TelaPerfilActivity extends MudarTemaActivity {
             radioMasculino.setChecked(false);
             radioFeminino.setChecked(false);
         }
+
         cursorBebe.close();
         db.close();
     }
