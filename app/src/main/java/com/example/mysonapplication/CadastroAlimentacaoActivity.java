@@ -8,10 +8,13 @@ import android.widget.ImageView;
 
 public class CadastroAlimentacaoActivity extends MudarTemaActivity {
 
+    private int usuarioId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_alimentacao);
+        usuarioId = getIntent().getIntExtra("usuario_id", -1);
 
         ImageView imgVoltarPrincipal = findViewById(R.id.imagemVoltarDoCadastroAlimentacao);
         Button btnSalvarCadastroAlimentacao = findViewById(R.id.btnSalvarCadastroAlimentacao);
@@ -23,7 +26,9 @@ public class CadastroAlimentacaoActivity extends MudarTemaActivity {
                         CadastroAlimentacaoActivity.this,
                         TelaPrincipalActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
+                finish();
             }
         });
 

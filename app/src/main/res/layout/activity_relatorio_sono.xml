@@ -246,7 +246,7 @@
         app:layout_constraintVertical_bias="0.046" />
 
     <ImageView
-        android:id="@+id/imagemVoltarDoEsqueciSenha4"
+        android:id="@+id/imgVoltarRelatorioSono"
         android:layout_width="71dp"
         android:layout_height="29dp"
         app:layout_constraintBottom_toBottomOf="parent"
