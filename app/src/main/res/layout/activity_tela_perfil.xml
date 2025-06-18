@@ -64,35 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbarRelatoriosBebe"
-        android:layout_width="346dp"
-        android:layout_height="55dp"
-        android:background="@drawable/rounded_toolbar"
-        android:backgroundTint="@color/Cor_container"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/seta_direita"
-        app:tint="@android:color/black" />
+        app:layout_constraintVertical_bias="0.816" />
 
     <ImageView
         android:id="@+id/imagemVoltarDoPerfil"
@@ -168,22 +140,6 @@
         app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe"
         app:layout_constraintVertical_bias="0.796"
         app:srcCompat="@drawable/gender" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="Ver relatórios completos"
-        android:textStyle="bold"
-        android:textColor="@color/Cor_letra_dentroContainer"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatoriosBebe"
-        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/textView4"
@@ -267,7 +223,7 @@
         app:layout_constraintVertical_bias="0.455" />
 
     <TextView
-        android:id="@+id/txtNomePerfil4"
+        android:id="@+id/txtSonoTotalDeHoje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
@@ -283,7 +239,7 @@
         app:layout_constraintVertical_bias="0.258" />
 
     <TextView
-        android:id="@+id/txtNomePerfil9"
+        android:id="@+id/txtRefeicoesDeHoje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"

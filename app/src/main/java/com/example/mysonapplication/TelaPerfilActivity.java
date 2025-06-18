@@ -17,6 +17,8 @@ public class TelaPerfilActivity extends MudarTemaActivity {
     private RadioButton radioMasculino;
     private RadioButton radioFeminino;
     private ImageView imgVoltarPerfil;
+    private TextView txtSonoTotal;
+    private TextView txtRefeicoesHoje;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +32,28 @@ public class TelaPerfilActivity extends MudarTemaActivity {
         radioMasculino = findViewById(R.id.radio_masculino);
         radioFeminino = findViewById(R.id.radio_feminino);
         imgVoltarPerfil = findViewById(R.id.imagemVoltarDoPerfil);
+        txtRefeicoesHoje = findViewById(R.id.txtRefeicoesDeHoje);
+        txtSonoTotal = findViewById(R.id.txtSonoTotalDeHoje);
+
 
         carregarDadosUsuarioEBebe(usuarioId);
 
         imgVoltarPerfil.setOnClickListener(v -> {
             Intent intent = new Intent(TelaPerfilActivity.this, TelaPrincipalActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            startActivity(intent);
+            finish();
+        });
+
+        txtSonoTotal.setOnClickListener(v -> {
+            Intent intent = new Intent(TelaPerfilActivity.this, RelatorioSonoActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            startActivity(intent);
+            finish();
+        });
+
+        txtRefeicoesHoje.setOnClickListener(v -> {
+            Intent intent = new Intent(TelaPerfilActivity.this, RelatorioAlimentacaoActivity.class);
             intent.putExtra("usuario_id", usuarioId);
             startActivity(intent);
             finish();
