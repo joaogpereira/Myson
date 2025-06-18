@@ -24,13 +24,15 @@
         app:layout_constraintVertical_bias="0.68" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edtHoraQueDormiu"
         android:layout_width="245dp"
         android:layout_height="34dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:fontFamily="@font/montserrat"
-        android:hint="        6:30"
+        android:paddingLeft="60dp"
+        android:textColor="@android:color/black"
+        android:hint="6:30"
         android:textColorHint="@android:color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe2"
@@ -41,11 +43,12 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edtNotas"
         android:layout_width="245dp"
         android:layout_height="50dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
+        android:textColor="@android:color/black"
         android:fontFamily="@font/montserrat"
         android:hint=" Ex:bebê agitado,acordou \n chorando"
         android:textColorHint="@android:color/black"
@@ -58,13 +61,15 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtHoraQueAcordou"
         android:layout_width="245dp"
         android:layout_height="34dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:fontFamily="@font/montserrat"
-        android:hint="        20:00"
+        android:paddingLeft="60dp"
+        android:textColor="@android:color/black"
+        android:hint="20:00"
         android:textColorHint="@android:color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe2"
@@ -75,7 +80,7 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <Button
-        android:id="@+id/btnLogin2"
+        android:id="@+id/btnCadastroSono"
         android:layout_width="216dp"
         android:layout_height="45dp"
         android:alpha="0.77"
@@ -205,25 +210,29 @@
         android:id="@+id/imageView17"
         android:layout_width="31dp"
         android:layout_height="27dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintBottom_toBottomOf="@+id/edtHoraQueAcordou"
+        app:layout_constraintEnd_toEndOf="@+id/edtHoraQueAcordou"
         app:layout_constraintHorizontal_bias="0.020"
         app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        app:srcCompat="@drawable/clock" />
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/edtHoraQueAcordou"
+        app:layout_constraintTop_toTopOf="@+id/edtHoraQueAcordou"
+        app:srcCompat="@drawable/clock"
+        app:tint="@android:color/black"/>
 
     <ImageView
         android:id="@+id/imageView20"
         android:layout_width="31dp"
         android:layout_height="27dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText3"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintBottom_toBottomOf="@+id/edtHoraQueDormiu"
+        app:layout_constraintEnd_toEndOf="@+id/edtHoraQueDormiu"
         app:layout_constraintHorizontal_bias="0.020"
         app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toTopOf="@+id/editText3"
-        app:srcCompat="@drawable/clock" />
+        android:backgroundTint="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/edtHoraQueDormiu"
+        app:layout_constraintTop_toTopOf="@+id/edtHoraQueDormiu"
+        app:srcCompat="@drawable/clock"
+        app:tint="@android:color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
