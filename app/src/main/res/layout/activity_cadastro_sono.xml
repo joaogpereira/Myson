@@ -30,9 +30,9 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:fontFamily="@font/montserrat"
-        android:paddingLeft="40dp"
+        android:paddingLeft="60dp"
         android:textColor="@android:color/black"
-        android:hint="        6:30"
+        android:hint="6:30"
         android:textColorHint="@android:color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe2"
@@ -67,9 +67,9 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:fontFamily="@font/montserrat"
-        android:paddingLeft="40dp"
+        android:paddingLeft="60dp"
         android:textColor="@android:color/black"
-        android:hint="        20:00"
+        android:hint="20:00"
         android:textColorHint="@android:color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe2"
@@ -217,7 +217,8 @@
         android:backgroundTint="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/edtHoraQueAcordou"
         app:layout_constraintTop_toTopOf="@+id/edtHoraQueAcordou"
-        app:srcCompat="@drawable/clock" />
+        app:srcCompat="@drawable/clock"
+        app:tint="@android:color/black"/>
 
     <ImageView
         android:id="@+id/imageView20"
@@ -230,7 +231,8 @@
         android:backgroundTint="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/edtHoraQueDormiu"
         app:layout_constraintTop_toTopOf="@+id/edtHoraQueDormiu"
-        app:srcCompat="@drawable/clock" />
+        app:srcCompat="@drawable/clock"
+        app:tint="@android:color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

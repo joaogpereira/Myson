@@ -241,11 +241,11 @@
         android:id="@+id/imageView12"
         android:layout_width="43dp"
         android:layout_height="34dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText9"
-        app:layout_constraintEnd_toEndOf="@+id/editText9"
+        app:layout_constraintBottom_toBottomOf="@+id/edtDataCadastroAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataCadastroAlimentacao"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText9"
-        app:layout_constraintTop_toTopOf="@+id/editText9"
+        app:layout_constraintStart_toStartOf="@+id/edtDataCadastroAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/edtDataCadastroAlimentacao"
         app:layout_constraintVertical_bias="0.455"
         app:srcCompat="@drawable/calendario" />
 
@@ -254,14 +254,14 @@
         android:layout_width="38dp"
         android:layout_height="30dp"
         android:backgroundTint="@android:color/black"
-        app:tint="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editText6"
-        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintBottom_toBottomOf="@+id/edtCadastroHoraAlimentacao"
+        app:layout_constraintEnd_toEndOf="@+id/edtCadastroHoraAlimentacao"
         app:layout_constraintHorizontal_bias="0.009"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toTopOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="@+id/edtCadastroHoraAlimentacao"
+        app:layout_constraintTop_toTopOf="@+id/edtCadastroHoraAlimentacao"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/clock" />
+        app:srcCompat="@drawable/clock"
+        app:tint="@android:color/black" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
