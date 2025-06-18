@@ -30,7 +30,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:fontFamily="@font/montserrat"
-        android:paddingLeft="20dp"
+        android:paddingLeft="40dp"
         android:textColor="@android:color/black"
         android:hint="        6:30"
         android:textColorHint="@android:color/black"
@@ -67,7 +67,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/border"
         android:fontFamily="@font/montserrat"
-        android:paddingLeft="20dp"
+        android:paddingLeft="40dp"
         android:textColor="@android:color/black"
         android:hint="        20:00"
         android:textColorHint="@android:color/black"
@@ -214,6 +214,7 @@
         app:layout_constraintEnd_toEndOf="@+id/edtHoraQueAcordou"
         app:layout_constraintHorizontal_bias="0.020"
         app:layout_constraintVertical_bias="0.5"
+        android:backgroundTint="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/edtHoraQueAcordou"
         app:layout_constraintTop_toTopOf="@+id/edtHoraQueAcordou"
         app:srcCompat="@drawable/clock" />
@@ -226,6 +227,7 @@
         app:layout_constraintEnd_toEndOf="@+id/edtHoraQueDormiu"
         app:layout_constraintHorizontal_bias="0.020"
         app:layout_constraintVertical_bias="0.5"
+        android:backgroundTint="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/edtHoraQueDormiu"
         app:layout_constraintTop_toTopOf="@+id/edtHoraQueDormiu"
         app:srcCompat="@drawable/clock" />
