@@ -2,26 +2,70 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:background="@color/Fundo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Fundo"
     tools:context=".RelatorioAlimentacaoActivity">
 
+    <!-- Botão Voltar -->
+
+    <!-- ScrollView com a lista -->
+
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imagemVoltarDoRelatorioAlimentacao"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Voltar"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="222dp"
+        android:layout_height="74dp"
+        android:text="Relatório da \n Alimentação"
+        android:textColor="@color/Cor_letra"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="86dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
+        app:srcCompat="@drawable/clock" />
+
+    <ImageView
+        android:id="@+id/imageView14"
         android:layout_width="50dp"
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.047"
         app:srcCompat="@drawable/chupeta" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
@@ -31,351 +75,42 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
-
+        app:layout_constraintVertical_bias="0.046" />
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbarRelatorioAlimentacao"
-        android:layout_width="301dp"
-        android:layout_height="526dp"
+        android:id="@+id/materialToolbarNomeBebe2"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         android:background="@drawable/rounded_toolbar"
-        android:backgroundTint="@color/Cor_container"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.68" />
 
-    <Button
-        android:id="@+id/btnRetorno"
-        android:layout_width="216dp"
-        android:layout_height="45dp"
-        android:alpha="0.77"
-        android:backgroundTint="@android:color/black"
-        android:fontFamily="@font/montserrat"
-        android:text="Retornar"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.95" />
+    <ScrollView
+        android:id="@+id/scrollViewAlimentacao"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarNomeBebe2"
+        app:layout_constraintEnd_toEndOf="@+id/materialToolbarNomeBebe2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/materialToolbarNomeBebe2"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarNomeBebe2"
+        app:layout_constraintVertical_bias="0.0">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbarIdadeBebe2"
-        android:layout_width="280dp"
-        android:layout_height="45dp"
-        android:background="@drawable/rounded_toolbar"
-        android:backgroundTint="@color/Fundo"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306" />
+        <LinearLayout
+            android:id="@+id/layoutListaAlimentacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbarIdadeBebe3"
-        android:layout_width="280dp"
-        android:layout_height="45dp"
-        android:background="@drawable/rounded_toolbar"
-        android:backgroundTint="@color/Fundo"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="203dp"
-        android:layout_height="89dp"
-        android:fontFamily="@font/montserrat"
-        android:text="Relatório da alimentação "
-        android:textColor="@color/Cor_letra"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.682"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="20/05/2025"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe2"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="19/05/2025"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarIdadeBebe3"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarIdadeBebe3"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarIdadeBebe3"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarIdadeBebe3"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:text="10:30"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.168" />
-
-    <EditText
-        android:id="@+id/editTextText7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:text="10:30"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.613" />
-
-    <EditText
-        android:id="@+id/editTextText8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:text="10:30"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.706" />
-
-    <EditText
-        android:id="@+id/editTextText9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:singleLine="true"
-        android:text="10:30"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.8" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:text="10:30"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.27" />
-
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="text"
-        android:text="10:30"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintEnd_toEndOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarRelatorioAlimentacao"
-        app:layout_constraintVertical_bias="0.363" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fórmula"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText4"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
-        app:layout_constraintTop_toTopOf="@+id/editTextText4" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fórmula"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText7"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText7"
-        app:layout_constraintStart_toStartOf="@+id/editTextText7"
-        app:layout_constraintTop_toTopOf="@+id/editTextText7" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:text="Leite"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText8"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText8"
-        app:layout_constraintStart_toStartOf="@+id/editTextText8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Purê"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText9"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText9"
-        app:layout_constraintStart_toStartOf="@+id/editTextText9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fórmula"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText5"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText5"
-        app:layout_constraintStart_toStartOf="@+id/editTextText5"
-        app:layout_constraintTop_toTopOf="@+id/editTextText5"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Purê"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText6"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText6"
-        app:layout_constraintStart_toStartOf="@+id/editTextText6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="150mL"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText4"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText4"
-        app:layout_constraintTop_toTopOf="@+id/editTextText4" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="150mL"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText7"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText7"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText7"
-        app:layout_constraintTop_toTopOf="@+id/editTextText7" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="90mL"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText8"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText8"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
-
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="150mL"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText9"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText8"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="150mL"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText5"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText5"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText5"
-        app:layout_constraintTop_toTopOf="@+id/editTextText5" />
-
-    <ImageView
-        android:id="@+id/Clock"
-        android:layout_width="76dp"
-        android:layout_height="59dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.188"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        app:srcCompat="@drawable/clock" />
-
-    <ImageView
-        android:id="@+id/imagemVoltarDoRelatorioAlimentacao"
-        android:layout_width="71dp"
-        android:layout_height="29dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.026"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048"
-        app:srcCompat="@drawable/left_arrow" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
