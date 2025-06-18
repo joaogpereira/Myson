@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.68" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edtHoraQueDormiu"
         android:layout_width="245dp"
         android:layout_height="34dp"
         android:layout_marginEnd="32dp"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edtNotas"
         android:layout_width="245dp"
         android:layout_height="50dp"
         android:layout_marginEnd="32dp"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.691" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtHoraQueAcordou"
         android:layout_width="245dp"
         android:layout_height="34dp"
         android:layout_marginEnd="32dp"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <Button
-        android:id="@+id/btnLogin2"
+        android:id="@+id/btnCadastroSono"
         android:layout_width="216dp"
         android:layout_height="45dp"
         android:alpha="0.77"
@@ -205,24 +205,24 @@
         android:id="@+id/imageView17"
         android:layout_width="31dp"
         android:layout_height="27dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintBottom_toBottomOf="@+id/edtHoraQueAcordou"
+        app:layout_constraintEnd_toEndOf="@+id/edtHoraQueAcordou"
         app:layout_constraintHorizontal_bias="0.020"
         app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/edtHoraQueAcordou"
+        app:layout_constraintTop_toTopOf="@+id/edtHoraQueAcordou"
         app:srcCompat="@drawable/clock" />
 
     <ImageView
         android:id="@+id/imageView20"
         android:layout_width="31dp"
         android:layout_height="27dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText3"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintBottom_toBottomOf="@+id/edtHoraQueDormiu"
+        app:layout_constraintEnd_toEndOf="@+id/edtHoraQueDormiu"
         app:layout_constraintHorizontal_bias="0.020"
         app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toTopOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/edtHoraQueDormiu"
+        app:layout_constraintTop_toTopOf="@+id/edtHoraQueDormiu"
         app:srcCompat="@drawable/clock" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
