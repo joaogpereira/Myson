@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,146 +17,129 @@ import java.util.TimeZone;
 
 public class TelaPrincipalActivity extends MudarTemaActivity {
     private int usuarioId;
-
+    private Bebê bebe; // Guardar o bebê encontrado
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
 
         usuarioId = getIntent().getIntExtra("usuario_id", -1);
 
+        // Se não recebeu um usuário válido, volta para login
+        if (usuarioId == -1) {
+            Intent intent = new Intent(this, TelaLoginActivity.class);
+            startActivity(intent);
+            finish();
+            return;
+        }
 
-        // views para o relatorio
         ImageView imgViewRelatorioAlimentacao = findViewById(R.id.imageViewAlimentacao);
         ImageView imgViewRelatorioSono = findViewById(R.id.imageViewSono);
-        //views para o cadastro
-        TextView txtViewCadatroAlimentacao = findViewById(R.id.txtCadastrarAlimentacao);
-        TextView txtViewCadatroSono = findViewById(R.id.txtCadastrarSono);
-        //Imageview para o logout
+        TextView txtViewCadastroAlimentacao = findViewById(R.id.txtCadastrarAlimentacao);
+        TextView txtViewCadastroSono = findViewById(R.id.txtCadastrarSono);
         ImageView imgViewLogout = findViewById(R.id.imageViewLogout);
         ImageView imgIrPerfil = findViewById(R.id.imagemIrPerfil);
-        //Data de hoje
         TextView txtDataAtual = findViewById(R.id.txtData);
         TextView txtIdadeBebe = findViewById(R.id.txtIdadeBebe);
 
-
+        // Data atual formatada
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt", "BR"));
         dateFormat.setTimeZone(TimeZone.getTimeZone("America/Sao_Paulo"));
         String dataAtual = dateFormat.format(new Date());
         txtDataAtual.setText(dataAtual);
 
-        String dataNascimento = buscarDataNascimentoBebe(usuarioId);
+        // Buscar bebê do usuário (id e data nascimento)
+        bebe = buscarBebeDoUsuario(usuarioId);
 
-        if (dataNascimento != null) {
-            String idadeFormatada = calcularIdade(dataNascimento);
-            txtIdadeBebe.setText(idadeFormatada);
+        if (bebe != null) {
+            txtIdadeBebe.setText(calcularIdade(bebe.dataNascimento));
         } else {
             txtIdadeBebe.setText("Bebê não cadastrado");
         }
 
-
-        //direcionando para o relatorio de alimentação
-        imgViewRelatorioAlimentacao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        TelaPrincipalActivity.this,
-                        RelatorioAlimentacaoActivity.class
-                );
-                intent.putExtra("usuario_id", usuarioId);
-                startActivity(intent);
+        imgViewRelatorioAlimentacao.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RelatorioAlimentacaoActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            if (bebe != null) {
+                intent.putExtra("bebe_id", bebe.id);
             }
-        });
-        //direcionando para o relatorio de sono
-        imgViewRelatorioSono.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        TelaPrincipalActivity.this,
-                        RelatorioSonoActivity.class
-                );
-                intent.putExtra("usuario_id", usuarioId);
-                startActivity(intent);
-            }
-        });
-        //direciona para o cadastro da alimentação
-        txtViewCadatroAlimentacao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        TelaPrincipalActivity.this,
-                        CadastroAlimentacaoActivity.class
-                );
-                intent.putExtra("usuario_id", usuarioId);
-                startActivity(intent);
-            }
-        });
-        // direciona para o cadastro do sono
-        txtViewCadatroSono.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        TelaPrincipalActivity.this,
-                        CadastroSonoActivity.class
-                );
-                intent.putExtra("usuario_id", usuarioId);
-                startActivity(intent);
-            }
-        });
-        // Intent de logout
-        imgViewLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        TelaPrincipalActivity.this,
-                        TelaLoginActivity.class
-                );
-                startActivity(intent);
-            }
-        });
-        // Direcionada para o Perfil
-        imgIrPerfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        TelaPrincipalActivity.this,
-                        TelaPerfilActivity.class
-                );
-                intent.putExtra("usuario_id", usuarioId);
-                startActivity(intent);
-            }
+            startActivity(intent);
         });
 
+        imgViewRelatorioSono.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RelatorioSonoActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            if (bebe != null) {
+                intent.putExtra("bebe_id", bebe.id);
+            }
+            startActivity(intent);
+        });
 
+        txtViewCadastroAlimentacao.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CadastroAlimentacaoActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            if (bebe != null) {
+                intent.putExtra("bebe_id", bebe.id);
+            }
+            startActivity(intent);
+        });
 
-        
+        txtViewCadastroSono.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CadastroSonoActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            if (bebe != null) {
+                intent.putExtra("bebe_id", bebe.id);
+            }
+            startActivity(intent);
+        });
+
+        imgViewLogout.setOnClickListener(v -> {
+            // Se usar SharedPreferences para login, limpar aqui (não mostrado)
+            Intent intent = new Intent(this, TelaLoginActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        imgIrPerfil.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TelaPerfilActivity.class);
+            intent.putExtra("usuario_id", usuarioId);
+            if (bebe != null) {
+                intent.putExtra("bebe_id", bebe.id);
+            }
+            startActivity(intent);
+        });
     }
-    private String buscarDataNascimentoBebe(int usuarioId) {
+
+    private Bebê buscarBebeDoUsuario(int usuarioId) {
         ConexaoDB dbHelper = new ConexaoDB(this);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
-        String dataNascimento = null;
+        Bebê bebe = null;
 
-        Cursor cursor = db.rawQuery("SELECT data_nascimento FROM bebe WHERE usuario_id = ?", new String[]{String.valueOf(usuarioId)});
+        Cursor cursor = db.rawQuery("SELECT id, data_nascimento FROM bebe WHERE usuario_id = ?", new String[]{String.valueOf(usuarioId)});
+
         if (cursor.moveToFirst()) {
-            dataNascimento = cursor.getString(0);
+            int bebeId = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
+            String dataNascimento = cursor.getString(cursor.getColumnIndexOrThrow("data_nascimento"));
+            bebe = new Bebê(bebeId, dataNascimento);
         }
 
         cursor.close();
         db.close();
 
-        return dataNascimento;
+        return bebe;
     }
 
     private String calcularIdade(String dataNascimento) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+
         try {
             Date nascimento = sdf.parse(dataNascimento);
             Date hoje = new Date();
 
-            long diferencaMillis = hoje.getTime() - nascimento.getTime();
-            long diasTotais = diferencaMillis / (1000 * 60 * 60 * 24);
+            long diffMillis = hoje.getTime() - nascimento.getTime();
+            long diasTotais = diffMillis / (1000 * 60 * 60 * 24);
 
             int anos = (int) (diasTotais / 365);
             int meses = (int) ((diasTotais % 365) / 30);
@@ -169,8 +153,8 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
             if (semanas > 0) idadeStr.append(semanas).append(semanas == 1 ? " semana, " : " semanas, ");
             if (dias > 0 || idadeStr.length() == 0) idadeStr.append(dias).append(dias == 1 ? " dia" : " dias");
 
-            // Remover vírgula final, se tiver
             String idadeFormatada = idadeStr.toString().trim();
+
             if (idadeFormatada.endsWith(",")) {
                 idadeFormatada = idadeFormatada.substring(0, idadeFormatada.length() - 1);
             }
@@ -180,6 +164,17 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
         } catch (ParseException e) {
             e.printStackTrace();
             return "Data inválida";
+        }
+    }
+
+    // Classe interna para guardar dados do bebê
+    private static class Bebê {
+        int id;
+        String dataNascimento;
+
+        Bebê(int id, String dataNascimento) {
+            this.id = id;
+            this.dataNascimento = dataNascimento;
         }
     }
 }
