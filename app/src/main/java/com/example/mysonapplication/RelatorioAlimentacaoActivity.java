@@ -88,7 +88,7 @@ public class RelatorioAlimentacaoActivity extends MudarTemaActivity {
                     String dataFormatada = formatoData.format(dataObj);
                     String horaFormatada = formatoHora.format(dataObj);
 
-                    String linha = horaFormatada + " - " + tipo + " - " + quantidade + "ml";
+                    String linha = horaFormatada + " - " + tipo + " - " + quantidade + "ml/g";
 
                     if (!mapaPorData.containsKey(dataFormatada)) {
                         mapaPorData.put(dataFormatada, new ArrayList<>());
