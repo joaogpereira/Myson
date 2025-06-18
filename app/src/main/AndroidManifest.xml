@@ -13,6 +13,31 @@
         android:theme="@style/Theme.MysonApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RelatorioAlimentacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroAlimentacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RelatorioSonoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastroSonoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TelaPrincipalActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".WizardActivity"
+            android:exported="false" />
+        <activity
             android:name=".CadastroUsuarioActivity"
             android:exported="false" />
         <activity
