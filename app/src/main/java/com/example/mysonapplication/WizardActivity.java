@@ -97,13 +97,14 @@ public class WizardActivity extends MudarTemaActivity {
             values.put("sexo", sexoSelecionado);
             values.put("usuario_id", usuarioId);
 
-            long resultado = db.insert("bebe", null, values);
+            long idBebe = db.insert("bebe", null, values);
             db.close();
 
-            if (resultado != -1) {
+            if (idBebe != -1) {
                 Toast.makeText(this, "Bebê cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, TelaPrincipalActivity.class);
                 intent.putExtra("usuario_id", usuarioId);
+                intent.putExtra("bebe_id", (int) idBebe);
                 startActivity(intent);
                 finish();
             } else {
