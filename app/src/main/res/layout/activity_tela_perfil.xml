@@ -332,7 +332,8 @@
         android:layout_height="wrap_content"
         android:checked="true"
         android:text="Feminino"
-        android:buttonTint="@color/Cor_radio_button"
+        android:alpha="1.0"
+        android:buttonTint="@color/cor_radio_button_selector"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe"
@@ -346,8 +347,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Masculino"
+        android:alpha="1.0"
         android:textColor="@android:color/black"
-        android:buttonTint="@color/Cor_radio_button"
+        android:buttonTint="@color/cor_radio_button_selector"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe"
@@ -383,21 +385,17 @@
         app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe"
         app:layout_constraintVertical_bias="0.51" />
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="16"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
+    <View
+        android:id="@+id/view4"
+        android:layout_width="340dp"
+        android:layout_height="2dp"
+        android:background="#c4c4c4"
         app:layout_constraintBottom_toBottomOf="@+id/materialToolbarInformacoesBebe2"
         app:layout_constraintEnd_toEndOf="@+id/materialToolbarInformacoesBebe2"
-
-        app:layout_constraintStart_toStartOf="@+id/materialToolbarInformacoesBebe2"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe"
-        app:layout_constraintVertical_bias="0.88" />
-
-
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbarInformacoesBebe2"
+        app:layout_constraintVertical_bias="0.552" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
