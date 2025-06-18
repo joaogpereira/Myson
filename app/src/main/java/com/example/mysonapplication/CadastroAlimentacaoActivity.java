@@ -20,6 +20,8 @@ import java.util.Locale;
 public class CadastroAlimentacaoActivity extends MudarTemaActivity {
 
     private int usuarioId;
+    private int bebeId;
+
 
     private EditText editTextData;
     private EditText editTextHora;
@@ -35,6 +37,7 @@ public class CadastroAlimentacaoActivity extends MudarTemaActivity {
         setContentView(R.layout.activity_cadastro_alimentacao);
 
         usuarioId = getIntent().getIntExtra("usuario_id", -1);
+        bebeId = getIntent().getIntExtra("bebe_id", -1);
 
         editTextData = findViewById(R.id.edtDataCadastroAlimentacao);
         editTextHora = findViewById(R.id.edtCadastroHoraAlimentacao);
@@ -47,6 +50,7 @@ public class CadastroAlimentacaoActivity extends MudarTemaActivity {
         imgVoltarPrincipal.setOnClickListener(v -> {
             Intent intent = new Intent(CadastroAlimentacaoActivity.this, TelaPrincipalActivity.class);
             intent.putExtra("usuario_id", usuarioId);
+            intent.putExtra("bebe_id", bebeId);
             startActivity(intent);
             finish();
         });
@@ -101,7 +105,7 @@ public class CadastroAlimentacaoActivity extends MudarTemaActivity {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put("usuario_id", usuarioId);
+        values.put("bebe_id", bebeId);
         values.put("data_hora", dataHoraBanco);
         values.put("tipo_alimentacao", tipoAlimentacao);
         values.put("volume", volume);
