@@ -49,7 +49,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
 
         if (dataNascimento != null) {
             String idadeFormatada = calcularIdade(dataNascimento);
-            txtIdadeBebe.setText("Idade do bebê: " + idadeFormatada);
+            txtIdadeBebe.setText(idadeFormatada);
         } else {
             txtIdadeBebe.setText("Bebê não cadastrado");
         }
@@ -118,6 +118,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                         TelaPrincipalActivity.this,
                         TelaPerfilActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
             }
         });
