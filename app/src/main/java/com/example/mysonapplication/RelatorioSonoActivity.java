@@ -4,11 +4,12 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.ContextCompat;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -38,7 +39,7 @@ public class RelatorioSonoActivity extends MudarTemaActivity {
         imgVoltar.setOnClickListener(v -> {
             Intent intent = new Intent(RelatorioSonoActivity.this, TelaPrincipalActivity.class);
             intent.putExtra("usuario_id", usuarioId);
-            intent.putExtra("bebe_id", bebeId);
+            // Não precisa passar bebe_id para tela principal, já que ela busca por usuario_id, mas pode se preferir manter
             startActivity(intent);
             finish();
         });
@@ -109,7 +110,7 @@ public class RelatorioSonoActivity extends MudarTemaActivity {
             txtData.setText(data);
             txtData.setTextSize(18);
             txtData.setPadding(0, 16, 0, 8);
-            txtData.setTextColor(getResources().getColor(android.R.color.black, null));
+            txtData.setTextColor(ContextCompat.getColor(this, android.R.color.black));
             layoutListaSono.addView(txtData);
 
             // Entradas do sono

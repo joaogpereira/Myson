@@ -9,8 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -51,6 +49,24 @@ public class RelatorioAlimentacaoActivity extends MudarTemaActivity {
         ConexaoDB dbHelper = new ConexaoDB(this);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
 
+        // Valida se o bebê pertence ao usuário
+        Cursor cursorValida = db.rawQuery(
+                "SELECT COUNT(*) FROM bebe WHERE id = ? AND usuario_id = ?",
+                new String[]{String.valueOf(bebeId), String.valueOf(usuarioId)}
+        );
+
+        if (cursorValida.moveToFirst()) {
+            int count = cursorValida.getInt(0);
+            if (count == 0) {
+                Toast.makeText(this, "Bebê inválido para este usuário.", Toast.LENGTH_SHORT).show();
+                cursorValida.close();
+                db.close();
+                return;
+            }
+        }
+        cursorValida.close();
+
+        // Consulta os dados de alimentação filtrando pelo bebê válido
         Cursor cursor = db.rawQuery(
                 "SELECT data_hora, tipo, quantidade FROM alimentacao WHERE bebe_id = ? ORDER BY data_hora DESC",
                 new String[]{String.valueOf(bebeId)}
