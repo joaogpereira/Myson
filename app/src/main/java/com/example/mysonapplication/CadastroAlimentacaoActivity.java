@@ -108,7 +108,7 @@ public class CadastroAlimentacaoActivity extends MudarTemaActivity {
         values.put("bebe_id", bebeId);
         values.put("data_hora", dataHoraBanco);
         values.put("tipo", tipoAlimentacao);
-        values.put("volume", volume);
+        values.put("quantidade", volume);
 
         long resultado = db.insert("alimentacao", null, values);
 
