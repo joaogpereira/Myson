@@ -63,6 +63,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                         TelaPrincipalActivity.this,
                         RelatorioAlimentacaoActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
             }
         });
@@ -74,6 +75,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                         TelaPrincipalActivity.this,
                         RelatorioSonoActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
             }
         });
@@ -85,6 +87,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                         TelaPrincipalActivity.this,
                         CadastroAlimentacaoActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
             }
         });
@@ -96,6 +99,7 @@ public class TelaPrincipalActivity extends MudarTemaActivity {
                         TelaPrincipalActivity.this,
                         CadastroSonoActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
             }
         });

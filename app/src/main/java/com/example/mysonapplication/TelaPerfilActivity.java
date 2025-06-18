@@ -8,6 +8,13 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class TelaPerfilActivity extends MudarTemaActivity {
 
     private int usuarioId;
@@ -34,7 +41,6 @@ public class TelaPerfilActivity extends MudarTemaActivity {
         imgVoltarPerfil = findViewById(R.id.imagemVoltarDoPerfil);
         txtRefeicoesHoje = findViewById(R.id.txtRefeicoesDeHoje);
         txtSonoTotal = findViewById(R.id.txtSonoTotalDeHoje);
-
 
         carregarDadosUsuarioEBebe(usuarioId);
 
@@ -92,7 +98,19 @@ public class TelaPerfilActivity extends MudarTemaActivity {
             String dataNascimento = cursorBebe.getString(cursorBebe.getColumnIndexOrThrow("data_nascimento"));
             String sexo = cursorBebe.getString(cursorBebe.getColumnIndexOrThrow("sexo"));
 
-            txtDataNascimentoBebe.setText("Data de nascimento: " + dataNascimento);
+            // Converter data de "yyyy-MM-dd" para "dd/MM/yyyy"
+            try {
+                SimpleDateFormat formatoBanco = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+                Date data = formatoBanco.parse(dataNascimento);
+
+                SimpleDateFormat formatoDesejado = new SimpleDateFormat("dd/MM/yyyy", new Locale("pt", "BR"));
+                String dataFormatada = formatoDesejado.format(data);
+
+                txtDataNascimentoBebe.setText(dataFormatada);
+            } catch (ParseException e) {
+                e.printStackTrace();
+                txtDataNascimentoBebe.setText("Data inválida");
+            }
 
             if ("Masculino".equalsIgnoreCase(sexo)) {
                 radioMasculino.setChecked(true);

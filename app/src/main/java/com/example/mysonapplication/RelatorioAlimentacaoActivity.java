@@ -13,10 +13,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class RelatorioAlimentacaoActivity extends MudarTemaActivity {
 
+
+    private int usuarioId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_relatorio_alimentacao);
+        usuarioId = getIntent().getIntExtra("usuario_id", -1);
 
         ImageView imgVoltarRelatorioAlimentacao = findViewById(R.id.imagemVoltarDoRelatorioAlimentacao);
 
@@ -28,7 +32,10 @@ public class RelatorioAlimentacaoActivity extends MudarTemaActivity {
                         RelatorioAlimentacaoActivity.this,
                         TelaPrincipalActivity.class
                 );
+                intent.putExtra("usuario_id", usuarioId);
                 startActivity(intent);
+                finish();
+
             }
         });
 
