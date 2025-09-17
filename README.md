@@ -49,28 +49,28 @@ Abaixo, segue uma lista com links e documentos úteis.
 <div align="center">
 
 Tela inicial do sistema
-<img width="1080" height="1000" alt="Screenshot_20250917_114650" src="https://github.com/user-attachments/assets/89a5a5d8-2b86-4d09-9d9c-02e6a9dbbd16" />
+<img width="500" height="1000" alt="Screenshot_20250917_114650" src="https://github.com/user-attachments/assets/89a5a5d8-2b86-4d09-9d9c-02e6a9dbbd16" />
 
 Login do usuário
-<img width="1080" height="1000" alt="TelaLogin" src="https://github.com/user-attachments/assets/8949178a-d69b-467d-aff6-0096e609eede" />
+<img width="500" height="1000" alt="TelaLogin" src="https://github.com/user-attachments/assets/8949178a-d69b-467d-aff6-0096e609eede" />
 
 Cadastro bêbe
-<img width="1080" height="1000" alt="Screenshot_20250917_114611" src="https://github.com/user-attachments/assets/73bc2604-c2f8-449b-bada-eada720672af" />
+<img width="500" height="1000" alt="Screenshot_20250917_114611" src="https://github.com/user-attachments/assets/73bc2604-c2f8-449b-bada-eada720672af" />
 
 Cadastro
-<img width="1080" height="1000" alt="Screenshot_20250917_114405" src="https://github.com/user-attachments/assets/a801d1d3-3b23-4a6f-b678-f1d109318499" />
+<img width="500" height="1000" alt="Screenshot_20250917_114405" src="https://github.com/user-attachments/assets/a801d1d3-3b23-4a6f-b678-f1d109318499" />
 
 Cadastro alimentaçao
-<img width="1080" height="1000" alt="Screenshot_20250917_115702" src="https://github.com/user-attachments/assets/8c3db246-f63e-472b-8393-7ef03c514ca7" />
+<img width="500" height="1000" alt="Screenshot_20250917_115702" src="https://github.com/user-attachments/assets/8c3db246-f63e-472b-8393-7ef03c514ca7" />
 
 Cadastro sono
-<img width="1080" height="1000" alt="CadastroSono" src="https://github.com/user-attachments/assets/7d9e47ad-4c3e-463f-acf0-428e6c1ef3de" />
+<img width="500" height="1000" alt="CadastroSono" src="https://github.com/user-attachments/assets/7d9e47ad-4c3e-463f-acf0-428e6c1ef3de" />
 
 Relatório Sono
-<img width="1080" height="1000" alt="relatorioSono" src="https://github.com/user-attachments/assets/f86849e0-a023-48d5-ba10-a5643ee97fb0" />
+<img width="500" height="1000" alt="relatorioSono" src="https://github.com/user-attachments/assets/f86849e0-a023-48d5-ba10-a5643ee97fb0" />
 
 relatorio alimentação
-<img width="1080" height="1000" alt="relatorioAlimentacao" src="https://github.com/user-attachments/assets/dd9d385d-6323-4264-a2bd-4c9e1fff7e88" />
+<img width="500" height="1000" alt="relatorioAlimentacao" src="https://github.com/user-attachments/assets/dd9d385d-6323-4264-a2bd-4c9e1fff7e88" />
 </div>
 
 
