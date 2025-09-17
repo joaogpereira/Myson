@@ -21,7 +21,7 @@
  <img width="70" height="70" alt="11570205" src="https://github.com/user-attachments/assets/55816443-9e4e-4cc6-8ceb-a00cccdf6301"  alt="Front-End" />
   <img width="70" height="70" alt="226777" src="https://github.com/user-attachments/assets/46421a55-17af-49ad-b094-ecbd496376d2" alt="Back-End" />
   <img width="70" height="70" alt="18556327" src="https://github.com/user-attachments/assets/1bb47c5b-e9e7-46db-926e-13adee74d70e" alt="SQLite" />
-   <img width="70" height="70" alt="Kotlin Full Color Logo Mark RGB" src="https://github.com/user-attachments/assets/eb5dda1b-3b9e-44c8-a634-ce8e548328f8" alt="Kotlin/>
+   <img width="70" height="70" alt="Kotlin Full Color Logo Mark RGB" src="https://github.com/user-attachments/assets/eb5dda1b-3b9e-44c8-a634-ce8e548328f8" alt="Kotlin" />
 
 </p>
 
