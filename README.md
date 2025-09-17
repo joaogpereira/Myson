@@ -42,9 +42,9 @@
 <h3>Banco-de-dados</h3>
 
 <p align="center">
-<img width="225" height="225" alt=![download](https://github.com/user-attachments/assets/b4b0ed54-e724-4a3d-8c69-715e35ca89fa)
-
+  <img width="225" height="225" alt="sqlite" src="https://github.com/user-attachments/assets/ce889c1f-032f-406c-b862-9f472395fc49" />
 </p>
+
 
 <p align="justify">
    
