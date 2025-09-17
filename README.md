@@ -20,7 +20,7 @@
  <img width="128" height="128" alt="3098002" src="https://github.com/user-attachments/assets/715fdff7-aeff-4057-a777-29c310d79323" alt="IDE" />
  <img width="128" height="128" alt="11570205" src="https://github.com/user-attachments/assets/55816443-9e4e-4cc6-8ceb-a00cccdf6301"  alt="Front-End" />
   <img width="128" height="128" alt="226777" src="https://github.com/user-attachments/assets/46421a55-17af-49ad-b094-ecbd496376d2" alt="Back-End" />
-  <img width="128" height="128" alt="14389795" src="https://github.com/user-attachments/assets/696c9463-00de-4583-a34a-2387601677db"  alt="SQLite" />
+  <img width="128" height="128" alt="18556327" src="https://github.com/user-attachments/assets/1bb47c5b-e9e7-46db-926e-13adee74d70e" alt="SQLite" />
 </p>
 
 
