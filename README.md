@@ -50,25 +50,36 @@ Abaixo, segue uma lista com links e documentos úteis.
 
 Tela inicial do sistema
 <img src="" alt="Tela de home" />
+<img width="1080" height="2400" alt="Screenshot_20250917_114650" src="https://github.com/user-attachments/assets/89a5a5d8-2b86-4d09-9d9c-02e6a9dbbd16" />
 
 Login do usuário
-<img src="./screenshots/login-user.png" alt="Tela de login do usuário" />
+<img src="./screenshots/" alt="Tela de login do usuário" />
+<img width="1080" height="2400" alt="TelaLogin" src="https://github.com/user-attachments/assets/8949178a-d69b-467d-aff6-0096e609eede" />
 
-Informações do produto
+Cadastro bêbe
 <img src="./screenshots/product-bee.png" alt="Tela dos detalhes do produto" />
+<img width="1080" height="2400" alt="Screenshot_20250917_114611" src="https://github.com/user-attachments/assets/73bc2604-c2f8-449b-bada-eada720672af" />
 
-Carrinho de compras
+Cadastro
 <img src="./screenshots/cart-bee.png" alt="Carrinho de compras do sistema" />
+<img width="1080" height="2400" alt="Screenshot_20250917_114405" src="https://github.com/user-attachments/assets/a801d1d3-3b23-4a6f-b678-f1d109318499" />
 
-Revisão de compra
+Cadastro alimentaçao
 <img src="./screenshots/shopping-bee.png" alt="Tela de revisão de compra" />
+<img width="1080" height="2400" alt="Screenshot_20250917_115702" src="https://github.com/user-attachments/assets/8c3db246-f63e-472b-8393-7ef03c514ca7" />
 
-Login do administrador
+Cadastro sono
 <img src="./screenshots/login-admin.png" alt="Tela de login do administrador" />
+<img width="1080" height="2400" alt="CadastroSono" src="https://github.com/user-attachments/assets/7d9e47ad-4c3e-463f-acf0-428e6c1ef3de" />
 
-Tela inicial da parte do administrador
+Relatório Sono
 <img src="./screenshots/home-admin.png" alt="Tela inicial da parte do administrador" />
+<img width="1080" height="2400" alt="relatorioSono" src="https://github.com/user-attachments/assets/f86849e0-a023-48d5-ba10-a5643ee97fb0" />
+
+relatorio alimentação
+<img width="1080" height="2400" alt="relatorioAlimentacao" src="https://github.com/user-attachments/assets/dd9d385d-6323-4264-a2bd-4c9e1fff7e88" />
 </div>
+
 
 <h2 id="autores">Autores</h2>
 
