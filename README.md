@@ -16,7 +16,7 @@
 <h2 id="tecnologias">Tecnologias</h2>
 
 
-<p>
+<p <p align="center">
   <img width="70" height="70" src="https://github.com/user-attachments/assets/9c4a447a-6521-4f62-89a8-030a748c2296" alt="IDE" />
   <img width="70" height="70" src="https://github.com/user-attachments/assets/85ccf3de-fe64-47e7-9e41-d92d8b00aa17" alt="Front-End" />
   <img width="70" height="70" src="https://github.com/user-attachments/assets/9a4706f7-239c-49ed-8501-f6fd621e77d4" alt="Back-End" />
