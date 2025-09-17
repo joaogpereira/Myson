@@ -38,11 +38,7 @@
 
 Abaixo, segue uma lista com links e documentos úteis.
 
-- <a href="https://github.com/WebII-2020-2/BEE/blob/main/docs/documentacaoEndpoints.md">Documentação dos Endpoints</a>
-- <a href="https://github.com/WebII-2020-2/BEE/blob/main/docs/deployAPI.md">Instalação da API</a>
-- <a href="https://github.com/WebII-2020-2/BEE/blob/main/docs/deploySPA.md">Instalação da SPA</a>
 - <a href="https://www.figma.com/design/umNAXKs3sbiyEMQfvj7YTi/Myson?node-id=0-1&p=f&t=hE5MYPWryepqeOzF-0">Protótipo de telas do Figma</a>
-- <a href="https://github.com/WebII-2020-2/BEE/blob/main/docs/documentoDeRequisitos.pdf">Documento de Requisitos</a>
 
 <h2 id="screenshots">Screenshots</h2>
 
