@@ -15,40 +15,14 @@
 
 <h2 id="tecnologias">Tecnologias</h2>
 
-<h3>IDE</h3>
-<p align="center">
-   <img width="225" height="225" alt="download" src="https://github.com/user-attachments/assets/9c4a447a-6521-4f62-89a8-030a748c2296" />
-</p>
-
-<p align="justify">
-  
-</p>
-
-<h3>Front-End</h3>
-<p align="center">
-  <img width="225" height="225" alt="download" src="https://github.com/user-attachments/assets/85ccf3de-fe64-47e7-9e41-d92d8b00aa17" />
-</p>
-
-<p align="justify">
-  
-</p>
-
-<h3>Back-End</h3>
 
 <p align="center">
- <img width="225" height="225" alt="download" src="https://github.com/user-attachments/assets/9a4706f7-239c-49ed-8501-f6fd621e77d4" />
+  <img width="100" height="100" alt="IDE" src="https://github.com/user-attachments/assets/9c4a447a-6521-4f62-89a8-030a748c2296" />
+  <img width="100" height="100" alt="Front-End" src="https://github.com/user-attachments/assets/85ccf3de-fe64-47e7-9e41-d92d8b00aa17" />
+  <img width="100" height="100" alt="Back-End" src="https://github.com/user-attachments/assets/9a4706f7-239c-49ed-8501-f6fd621e77d4" />
+  <img width="100" height="100" alt="SQLite" src="https://github.com/user-attachments/assets/ce889c1f-032f-406c-b862-9f472395fc49" />
 </p>
 
-<h3>Banco-de-dados</h3>
-
-<p align="center">
-  <img width="225" height="225" alt="sqlite" src="https://github.com/user-attachments/assets/ce889c1f-032f-406c-b862-9f472395fc49" />
-</p>
-
-
-<p align="justify">
-   
-</p>
 
 <h2 id="links">Links úteis</h2>
 
