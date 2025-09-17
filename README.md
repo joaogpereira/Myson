@@ -17,10 +17,10 @@
 
 
 <p <p align="center">
-  <img width="70" height="70" src="https://github.com/user-attachments/assets/9c4a447a-6521-4f62-89a8-030a748c2296" alt="IDE" />
-  <img width="70" height="70" src="https://github.com/user-attachments/assets/85ccf3de-fe64-47e7-9e41-d92d8b00aa17" alt="Front-End" />
-  <img width="70" height="70" src="https://github.com/user-attachments/assets/9a4706f7-239c-49ed-8501-f6fd621e77d4" alt="Back-End" />
-  <img width="70" height="70" src="https://github.com/user-attachments/assets/ce889c1f-032f-406c-b862-9f472395fc49" alt="SQLite" />
+ <img width="128" height="128" alt="3098002" src="https://github.com/user-attachments/assets/715fdff7-aeff-4057-a777-29c310d79323" alt="IDE" />
+ <img width="128" height="128" alt="11570205" src="https://github.com/user-attachments/assets/55816443-9e4e-4cc6-8ceb-a00cccdf6301"  alt="Front-End" />
+  <img width="128" height="128" alt="226777" src="https://github.com/user-attachments/assets/46421a55-17af-49ad-b094-ecbd496376d2" alt="Back-End" />
+  <img width="128" height="128" alt="14389795" src="https://github.com/user-attachments/assets/696c9463-00de-4583-a34a-2387601677db"  alt="SQLite" />
 </p>
 
 
