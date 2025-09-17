@@ -17,17 +17,18 @@
 
 <h3>Front-End</h3>
 <p align="center">
-  <img src="dadadada" />
+  <img width="225" height="225" alt="download" src="https://github.com/user-attachments/assets/85ccf3de-fe64-47e7-9e41-d92d8b00aa17" />
 </p>
 
 <p align="justify">
   
 </p>
+<img width="225" height="225" alt="download" src="https://github.com/user-attachments/assets/9c4a447a-6521-4f62-89a8-030a748c2296" />
 
 <h3>Back-End</h3>
 
 <p align="center">
-  <img src="#" />
+ <img width="225" height="225" alt="download" src="https://github.com/user-attachments/assets/9a4706f7-239c-49ed-8501-f6fd621e77d4" />
 </p>
 
 <p align="justify">
